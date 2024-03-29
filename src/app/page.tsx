@@ -31,7 +31,7 @@ export default function Home() {
           <a href="linkedin.com/in/kristian-elde-johansen">
             <FaLinkedin />
           </a>
-          <a>
+          <a href="mailto:kristian.elde.johansen@gmail.com">
             <MdEmail />
           </a>
         </li>
