@@ -1,15 +1,22 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
     <>
-      <h1 className="flex justify-center">Kristians homepage</h1>
-      <ul className="flex-col justify-center">
-        <li className="">
-          <img src={"profile_picture.png"} alt="" width="500" height="350" />
+      <ul className="flex flex-col items-center space-y-8">
+        <li className="w-2/3">
+          <p className="text-center">
+            My name is Kristian. I am a 23 year old guy from Norway, currently
+            studying computer science at the University of Bergen.
+          </p>
         </li>
-        <li>
-          <a href="/cv">
-            <div>Gå til min CV</div>
-          </a>
+        <li className="">
+          <img
+            src={"profile_picture.png"}
+            alt=""
+            width="500"
+            height="350"
+            className="border rounded-lg"
+          />
         </li>
       </ul>
     </>
