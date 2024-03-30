@@ -4,8 +4,11 @@ export default function Header() {
   return (
     <>
       <div className="flex justify-between px-10 pt-3">
-        <h1 className="flex justify-center text-4xl ">
+        <h1 className="flex justify-center md:hidden sm:hidden text-4xl">
           Kristian Elde Johansen - Homepage
+        </h1>
+        <h1 className="flex justify-center lg:hidden xl:hidden">
+          Kristian - Homepage
         </h1>
         <div>
           <ThemeSwitcher />
