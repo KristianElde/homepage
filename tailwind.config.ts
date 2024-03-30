@@ -18,6 +18,7 @@ module.exports = {
         },
         primary: {
           DEFAULT: "var(--primary)",
+          shade: "var(--primary-shade)",
         },
       },
     },

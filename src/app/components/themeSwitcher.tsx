@@ -12,11 +12,11 @@ const ThemeSwitcher = () => {
   }
 
   return (
-    <button onClick={toggleTheme}>
+    <button className="h-6 w-6" onClick={toggleTheme}>
       {theme === "light" ? (
-        <LuMoon className=" h-full w-full p-1" />
+        <LuMoon className=" h-full w-full" />
       ) : (
-        <LuSun className=" h-full w-full p-1" />
+        <LuSun className=" h-full w-full" />
       )}
       <span className="sr-only">Toggle theme</span>
     </button>
