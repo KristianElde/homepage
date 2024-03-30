@@ -22,13 +22,13 @@ export default function Home() {
             className="border rounded-lg"
           />
         </li>
-        <li className=" w-full flex justify-around h-full">
+        <li className=" w-full flex justify-around h-full pb-10">
           <a href="https://github.com/KristianElde">
             <div className="w-full h-full">
               <FaGithub />
             </div>
           </a>
-          <a href="linkedin.com/in/kristian-elde-johansen">
+          <a href="https://linkedin.com/in/kristian-elde-johansen">
             <FaLinkedin />
           </a>
           <a href="mailto:kristian.elde.johansen@gmail.com">
