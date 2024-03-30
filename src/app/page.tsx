@@ -7,18 +7,18 @@ export default function Home() {
   return (
     <>
       <ul className="flex flex-col items-center space-y-8">
-        <li className="w-2/3">
+        <li className="w-1/2">
           <p className="text-center">
-            My name is Kristian. I am a 23 year old guy from Norway, currently
-            studying computer science at the University of Bergen.
+            My name is Kristian. I am a 23 year old guy from Drøbak in Norway. I
+            am currently studying computer science at the University of Bergen.
           </p>
         </li>
-        <li className="">
+        <li className="w-2/3 h-full">
           <img
             src={"profile_picture.png"}
             alt=""
-            width="500"
-            height="350"
+            width=""
+            height=""
             className="border rounded-lg"
           />
         </li>

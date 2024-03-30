@@ -9,7 +9,7 @@
 
     --primary: #0a6450;
     --primary-shade: #084d3f;
-    --border: #eee;
+    --border: #323131;
   }
   .dark {
     --foreground: #eee;
@@ -29,16 +29,22 @@
 }
 
 @layer base {
-  * body {
+  * {
+    @apply border-border;
+  }
+  body {
     @apply bg-background text-foreground font-medium;
   }
   h1 {
     @apply text-3xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-2xl border-b;
   }
   h3 {
     @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
   }
 }
