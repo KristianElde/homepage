@@ -1,18 +1,14 @@
-export type EducationProps = {
-  educationName: string;
-  institution: string;
+export type RoleProps = {
+  name: string;
   duration: string;
-  degree: string;
   description: string;
 };
 
-export function Education(props: EducationProps) {
+export function Role(props: RoleProps) {
   return (
     <ul className="space-y-2">
       <li>
-        <h3>
-          {props.educationName} @ {props.institution}
-        </h3>
+        <h3>{props.name}</h3>
       </li>
       <li>
         <h4>{props.duration}</h4>
@@ -24,4 +20,4 @@ export function Education(props: EducationProps) {
   );
 }
 
-export default Education;
+export default Role;

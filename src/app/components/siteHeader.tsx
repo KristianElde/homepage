@@ -9,11 +9,9 @@ export default function SiteHeader() {
     <>
       <div className="flex justify-between items-center pt-3">
         <h1 className="hidden md:block text-4xl pb-4">
-          Kristian Elde Johansen - Homepage
+          Kristian Elde Johansen
         </h1>
-        <h1 className="block md:hidden text-4xl border-b">
-          Kristian - Homepage
-        </h1>
+        <h1 className="block md:hidden text-4xl pb-4">Kristian</h1>
         <div>
           <ThemeSwitcher />
         </div>
