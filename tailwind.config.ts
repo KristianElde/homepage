@@ -13,7 +13,7 @@ module.exports = {
         border: "var(--border)",
         background: {
           DEFAULT: "var(--background)",
-          shade: "var(--background-shade",
+          shade: "var(--background-shade)",
         },
         foreground: {
           DEFAULT: "var(--foreground)",

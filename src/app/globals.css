@@ -6,15 +6,16 @@
   :root {
     --foreground: #151210;
 
-    --background: #eee;
-    --background-shade: #600707c5;
+    --background: #f0dec478;
+    --background-shade: #c9c6c695;
 
     --primary: #0a6450;
     --primary-shade: #084d3f;
     --border: #323131;
   }
   .dark {
-    --foreground: #eee;
+    --foreground: #aba8a8;
+
     --background: #151210;
     --background-shade: #0b0b0b49;
 
@@ -36,13 +37,13 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-medium;
+    @apply bg-background text-foreground font-sans font-medium m-5;
   }
   h1 {
     @apply text-3xl;
   }
   h2 {
-    @apply text-2xl border-b;
+    @apply text-2xl;
   }
   h3 {
     @apply text-xl;

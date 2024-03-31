@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/header";
+import SiteHeader from "./components/siteHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Providers from "./components/providers";
 
@@ -26,7 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
+          <SiteHeader />
           {children}
         </Providers>
         <SpeedInsights />

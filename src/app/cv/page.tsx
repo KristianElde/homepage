@@ -1,4 +1,6 @@
 import Education, { type EducationProps } from "../components/education";
+import { Job, JobProps } from "../components/job";
+import SectionHeader from "../components/sectionHeader";
 
 export default function CV() {
   const educations: EducationProps[] = [
@@ -19,30 +21,49 @@ export default function CV() {
         "One-year program in economics and leadership. Having courses covering basic buisness economics, macroeconomics, leadership theory, accounting and marketing.",
     },
   ];
+
+  const jobs: JobProps[] = [
+    {
+      position: "Teaching assistant",
+      company: "University of Bergen",
+      duration: "January 2024 - Present time",
+      description:
+        "Part-time job as an teaching assistant in th cours, Introduction to programming. Responsible for helping students with their assignments in group sessions, as well as grading and commenting on their work. Got to develop my educational and communicative skills, and got to further my understanding for the subject.",
+    },
+    {
+      position: "Warehouse worker",
+      company: "Asko Sentrallager",
+      duration: "August 2020 - August 2023",
+      description:
+        "Various position percantages over the course of three years. Working full time for some stretsches, while having it as an part time job during studies. Learned a lot about being reliable towards my employeer, and developed a good work ethic.",
+    },
+  ];
   return (
     <>
-      <h1 className="border-b mx-4">Curriculum vitae</h1>
+      {/* <h1 className=" mx-4">Curriculum vitae</h1> */}
       <ul className="mx-4 space-y-4 pt-4">
         <li>
-          <h2>Utdanning</h2>
+          <SectionHeader name="Education" />
           <ul className="space-y-4 mx-2">
             {educations.map((education, i) => (
-              <li
-                key={i}
-                className={
-                  i % 2 === 0 ? "bg-background" : "bg-background-shade"
-                }
-              >
+              <li key={i}>
                 <Education {...education} />
               </li>
             ))}
           </ul>
         </li>
         <li>
-          <h2>Job experience</h2>
+          <SectionHeader name="Job experience" />
+          <ul className="space-y-4 mx-2">
+            {jobs.map((job, i) => (
+              <li key={i}>
+                <Job {...job} />
+              </li>
+            ))}
+          </ul>
         </li>
         <li>
-          <h2>Volounteer roles</h2>
+          <SectionHeader name="Volunteer roles" />
         </li>
       </ul>
     </>
