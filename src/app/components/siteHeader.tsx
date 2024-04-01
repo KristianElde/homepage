@@ -1,4 +1,5 @@
 "use client";
+import LangSwitcher from "./langSwitcher";
 import ThemeSwitcher from "./themeSwitcher";
 import { usePathname } from "next/navigation";
 
@@ -12,6 +13,9 @@ export default function SiteHeader() {
           Kristian Elde Johansen
         </h1>
         <h1 className="block md:hidden text-4xl pb-4">Kristian</h1>
+        <div>
+          <LangSwitcher />
+        </div>
         <div>
           <ThemeSwitcher />
         </div>
