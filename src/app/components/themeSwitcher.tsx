@@ -12,7 +12,7 @@ const ThemeSwitcher = () => {
   }
 
   return (
-    <button className="h-6 w-6" onClick={toggleTheme}>
+    <button className="h-6 w-6 mt-2" onClick={toggleTheme}>
       {theme === "light" ? (
         <LuMoon className=" h-full w-full" />
       ) : (

@@ -14,7 +14,7 @@ export default function SiteHeader() {
         </h1>
         <h1 className="block md:hidden text-4xl pb-4">Kristian</h1>
         <div></div>
-        <div>
+        <div className="flex flex-cols space-x-7">
           <ThemeSwitcher />
           <LangSwitcher />
         </div>
