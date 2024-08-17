@@ -16,6 +16,7 @@ export default function SiteHeader() {
         <div></div>
         <div>
           <ThemeSwitcher />
+          <LangSwitcher />
         </div>
       </div>
       <div>

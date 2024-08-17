@@ -5,16 +5,10 @@ import Education, { type EducationProps } from "../components/education";
 import { Job, JobProps } from "../components/job";
 import Role, { RoleProps } from "../components/role";
 import SectionHeader from "../components/sectionHeader";
+import { useLang } from "../components/langContext";
 
 export default function CV() {
-  const [english, setEnglish] = useState(true);
-
-  const englishOn = () => {
-    setEnglish(true);
-  };
-  const englishOff = () => {
-    setEnglish(false);
-  };
+  const { language, changeLanguage } = useLang();
 
   const educationsEN: EducationProps[] = [
     {
@@ -31,7 +25,7 @@ export default function CV() {
       duration: "August 2021 - June 2022",
       degree: "One-year program",
       description:
-        "One-year program in economics and leadership. Having courses covering basic buisness economics, macroeconomics, leadership theory, accounting and marketing.",
+        "One-year program in economics and leadership. Having courses covering basic buisness economics, macro economics, leadership theory, accounting and marketing.",
     },
   ];
 
@@ -116,35 +110,15 @@ export default function CV() {
     },
   ];
 
-  const educations = english ? educationsEN : educationsNO;
-  const jobs = english ? jobsEN : jobsNO;
-  const roles = english ? rolesEN : rolesNO;
+  const educations = language === "en" ? educationsEN : educationsNO;
+  const jobs = language === "en" ? jobsEN : jobsNO;
+  const roles = language === "en" ? rolesEN : rolesNO;
 
   return (
     <>
-      <div className="space-x-2">
-        <button className="h-10 w-10" onClick={englishOn}>
-          <img
-            className={!english ? "opacity-30" : ""}
-            src="uk.png"
-            alt=""
-            width={200}
-            height={200}
-          />
-        </button>
-        <button className="h-10 w-10" onClick={englishOff}>
-          <img
-            className={english ? "opacity-30" : ""}
-            src="norway.png"
-            alt=""
-            width={200}
-            height={200}
-          />
-        </button>
-      </div>
       <ul className="mx-4 space-y-12 pt-8 text-md">
         <li>
-          <SectionHeader name={english ? "Education" : "Utdanning"} />
+          <SectionHeader name={language === "en" ? "Education" : "Utdanning"} />
           <ul className="space-y-6 pt-1">
             {educations.map((education, i) => (
               <li key={i}>
@@ -154,7 +128,9 @@ export default function CV() {
           </ul>
         </li>
         <li>
-          <SectionHeader name={english ? "Job experience" : "Jobberfaring"} />
+          <SectionHeader
+            name={language === "en" ? "Job experience" : "Jobberfaring"}
+          />
           <ul className="space-y-6 pt-1">
             {jobs.map((job, i) => (
               <li key={i}>
@@ -165,7 +141,7 @@ export default function CV() {
         </li>
         <li>
           <SectionHeader
-            name={english ? "Volunteer roles" : "Frivillige verv"}
+            name={language === "en" ? "Volunteer roles" : "Frivillige verv"}
           />
           <ul className="space-y-6 pt-1">
             {roles.map((role, i) => (

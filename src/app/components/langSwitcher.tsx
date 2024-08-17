@@ -1,23 +1,31 @@
 "use client";
-import { useState } from "react";
 import { LuAlarmCheck, LuAlbum, LuMoon, LuSun } from "react-icons/lu";
+import { useLang } from "./langContext";
 
 const LangSwitcher = () => {
-  const [english, setEnglish] = useState(true);
-
-  const toggleLanguage = () => {
-    english ? setEnglish(false) : setEnglish(true);
-  };
+  const { language, changeLanguage } = useLang();
 
   return (
-    <button className="h-6 w-6" onClick={toggleLanguage}>
-      {english ? (
-        <LuAlarmCheck className=" h-full w-full" />
-      ) : (
-        <LuAlbum className=" h-full w-full" />
-      )}
-      <span className="sr-only">Toggle theme</span>
-    </button>
+    <div className="space-x-2">
+      <button className="h-10 w-10" onClick={() => changeLanguage("en")}>
+        <img
+          className={language === "no" ? "opacity-30" : ""}
+          src="uk.png"
+          alt=""
+          width={200}
+          height={200}
+        />
+      </button>
+      <button className="h-10 w-10" onClick={() => changeLanguage("no")}>
+        <img
+          className={language === "en" ? "opacity-30" : ""}
+          src="norway.png"
+          alt=""
+          width={200}
+          height={200}
+        />
+      </button>
+    </div>
   );
 };
 
