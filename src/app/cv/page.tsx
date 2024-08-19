@@ -46,7 +46,7 @@ export default function CV() {
     {
       position: "Warehouse worker",
       company: "Asko Sentrallager",
-      duration: "August 2020 - August 2023",
+      duration: "August 2020 - August 2024",
       description:
         "Various position percantages over the course of three years. Working full time for some stretsches, while having it as an part time job during studies. Learned a lot about being reliable towards my employeer, and developed a good work ethic.",
     },
@@ -62,7 +62,8 @@ export default function CV() {
     {
       name: "echo main board",
       duration: "January 2024 - Present time",
-      description: "",
+      description:
+        "Echos main board is responsible for the daily Echos hovedstyre har som oppgave å legge til rette for den daglige driften av linjeforeningen. Dette innebærer oppgaver som administrering av arrangementer, økonomiske beslutninger, promotering av echo og videreutvikling av organisasjonen.",
     },
   ];
 
@@ -96,7 +97,7 @@ export default function CV() {
     {
       position: "Lagermedarbeider",
       company: "Asko Sentrallager",
-      duration: "August 2020 - August 2023",
+      duration: "August 2020 - August 2024",
       description:
         "Varierende stillingprosenter over en 3-årsperiode. Jobbet fulltid enkelte perioder, og hadde deltidsstilling under studier. Lærte mye om det å være pålitelig ovenfor en arbeidsgiver, og tilegnet meg en god arbeidsmoral.",
     },
@@ -111,8 +112,9 @@ export default function CV() {
     },
     {
       name: "echo hovedstyre",
-      duration: "January 2024 - Present time",
-      description: "",
+      duration: "Januar 2024 - dags dato",
+      description:
+        "Echos hovedstyre har som oppgave å legge til rette for den daglige driften av linjeforeningen. Dette innebærer oppgaver som administrering av arrangementer, økonomiske beslutninger, promotering av echo og videreutvikling av organisasjonen.",
     },
   ];
 
