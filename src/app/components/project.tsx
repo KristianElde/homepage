@@ -17,7 +17,7 @@ export function Project(props: ProjectProps) {
           <h3>{props.projectName}</h3>
         </li>
         <li>
-          <p>{props.description}</p>
+          <p className="">{props.description}</p>
         </li>
         <li>
           <div>
