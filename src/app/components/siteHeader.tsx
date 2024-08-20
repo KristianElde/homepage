@@ -13,11 +13,10 @@ export default function SiteHeader() {
           Kristian Elde Johansen
         </h1>
         <h1 className="block md:hidden text-4xl pb-4">Kristian</h1>
-        <div>
-          <LangSwitcher />
-        </div>
-        <div>
+        <div></div>
+        <div className="flex flex-cols space-x-7">
           <ThemeSwitcher />
+          <LangSwitcher />
         </div>
       </div>
       <div>

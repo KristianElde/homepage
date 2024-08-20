@@ -1,8 +1,3 @@
-"use client";
-
-import { useLang } from "../components/langContext";
-import { Project, ProjectProps } from "../components/project";
-
 export default function Projects() {
   const { language, changeLanguage } = useLang();
 

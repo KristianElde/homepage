@@ -4,7 +4,6 @@ import "./globals.css";
 import SiteHeader from "./components/siteHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Providers from "./components/providers";
-import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
