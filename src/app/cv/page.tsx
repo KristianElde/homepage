@@ -118,8 +118,8 @@ export default function CV() {
 
   return (
     <>
-      <ul className="mx-4 space-y-12 pt-8 text-md">
-        <li>
+      <ul className="mx-4 space-y-6 pt-8 text-md">
+        <li className="border rounded-xl p-3 shadow-md">
           <SectionHeader name={language === "en" ? "Education" : "Utdanning"} />
           <ul className="space-y-6 pt-1">
             {educations.map((education, i) => (
@@ -129,7 +129,7 @@ export default function CV() {
             ))}
           </ul>
         </li>
-        <li>
+        <li className="border rounded-xl p-3 shadow-md">
           <SectionHeader
             name={language === "en" ? "Job experience" : "Jobberfaring"}
           />
@@ -141,7 +141,7 @@ export default function CV() {
             ))}
           </ul>
         </li>
-        <li>
+        <li className="border rounded-xl p-3 shadow-md">
           <SectionHeader
             name={language === "en" ? "Volunteer roles" : "Frivillige verv"}
           />

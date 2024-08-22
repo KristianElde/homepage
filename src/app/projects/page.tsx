@@ -1,3 +1,5 @@
+"use client";
+
 import { useLang } from "../components/langContext";
 import { Project, ProjectProps } from "../components/project";
 
@@ -6,20 +8,37 @@ export default function Projects() {
 
   const projectsEN: ProjectProps[] = [
     {
-      projectName: "echo.uib.no",
-      imgPath: "profile_picture.png",
+      projectName: "echos website",
+      imgPath: "echo-uib.png",
       github: "",
       description: "",
+      link: "echo.uib.no",
+    },
+    {
+      projectName: "Retail Repair data dashboard",
+      imgPath: "rr-pie.png",
+      github: "",
+      description:
+        "Gjorde et oppdrag for en bedrift som driver med reperasjon av gressklippere. Utviklet et data dashboard med ulike grafer og diagrammer som gjør det enklere for dem å analysere egne rutiner og effektivisere driften!",
+      link: "retail-repair-delicate-hill-6442.fly.dev",
     },
   ];
 
   const projectsNO: ProjectProps[] = [
     {
-      projectName: "echo.uib.no",
-      imgPath: "profile_picture.png",
+      projectName: "echos nettside",
+      imgPath: "echo-uib.png",
+      github: "",
+      description: "",
+      link: "echo.uib.no",
+    },
+    {
+      projectName: "Retail Repair data dashboard",
+      imgPath: "rr-pie.png",
       github: "",
       description:
-        "Webkom er grovt. Lærer så mye! OM er gud. Jizze heeelt idiot der a. Zeno må drikke vann. Mer wafflin må komme for trenger utfyllende tekst til å vises på nettsiden. Kommer til å stå skrevet om hva jeg har lært og om hva jeg gjør.",
+        "Gjorde et oppdrag for en bedrift som driver med reperasjon av gressklippere. Utviklet et data dashboard med ulike grafer og diagrammer som gjør det enklere for dem å analysere egne rutiner og effektivisere driften!",
+      link: "retail-repair-delicate-hill-6442.fly.dev",
     },
   ];
 
@@ -27,10 +46,10 @@ export default function Projects() {
 
   return (
     <>
-      <ul>
+      <ul className="mx-4 space-y-12 pt-8 text-md">
         {projects.map((project, i) => (
           <li key={i}>
-            <Project {...project} />
+            <Project props={project} i={i} />
           </li>
         ))}
       </ul>
