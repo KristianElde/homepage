@@ -11,7 +11,7 @@ export default function Projects() {
       projectName: "echos website",
       imgPath: "echo-uib.png",
       github: "",
-      description: "",
+      description: "lorem",
       link: "echo.uib.no",
     },
     {
@@ -19,7 +19,7 @@ export default function Projects() {
       imgPath: "rr-pie.png",
       github: "",
       description:
-        "Gjorde et oppdrag for en bedrift som driver med reperasjon av gressklippere. Utviklet et data dashboard med ulike grafer og diagrammer som gjør det enklere for dem å analysere egne rutiner og effektivisere driften!",
+        "I completed an assignment for a company that repairs lawnmowers. I developed a data dashboard with various graphs and charts that make it easier for them to analyze their routines and streamline operations!",
       link: "retail-repair-delicate-hill-6442.fly.dev",
     },
   ];
@@ -29,7 +29,7 @@ export default function Projects() {
       projectName: "echos nettside",
       imgPath: "echo-uib.png",
       github: "",
-      description: "",
+      description: "lorem",
       link: "echo.uib.no",
     },
     {

@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteHeader from "./components/siteHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Providers from "./components/providers";
+import SiteFooter from "./components/siteFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
         >
           <SiteHeader />
           {children}
+          <SiteFooter />
         </Providers>
         <SpeedInsights />
       </body>
