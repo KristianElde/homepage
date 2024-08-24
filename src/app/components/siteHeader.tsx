@@ -24,14 +24,14 @@ export default function SiteHeaderAlt() {
       </div>
       <div className=" ">
         <ul
-          className={`grid grid-cols-${routes.length} text-center rounded-xl bg-primary shadow-2xl border`}
+          className={`grid grid-cols-3 text-center rounded-xl bg-primary shadow-2xl border`}
         >
           {routes.map((header, i) => {
             return (
               <li
                 key={i}
                 className={`py-3 text-xl rounded-xl ${
-                  selected === `/${header.toLowerCase}`
+                  selected === `/${header.toLowerCase()}`
                     ? "bg-primary-shade"
                     : "bg-primary"
                 }`}
