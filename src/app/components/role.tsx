@@ -6,14 +6,14 @@ export type RoleProps = {
 
 export function Role(props: RoleProps) {
   return (
-    <ul className="space-y-2">
+    <ul>
       <li>
-        <h3>{props.name}</h3>
+        <h3 className="font-semibold">{props.name}</h3>
       </li>
       <li>
         <h4>{props.duration}</h4>
       </li>
-      <li className="mx-4">
+      <li className="mx-4 my-2">
         <p>{props.description}</p>
       </li>
     </ul>

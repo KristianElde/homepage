@@ -10,7 +10,7 @@ const LangSwitcher = () => {
     <div className="space-x-2">
       <button className="h-10 w-10" onClick={() => changeLanguage("en")}>
         <img
-          className={language === "no" ? "opacity-30" : ""}
+          className={`border ${language === "no" ? "opacity-30" : ""}`}
           src="uk.png"
           alt=""
           width={200}
@@ -19,7 +19,7 @@ const LangSwitcher = () => {
       </button>
       <button className="h-10 w-10" onClick={() => changeLanguage("no")}>
         <img
-          className={language === "en" ? "opacity-30" : ""}
+          className={`border ${language === "en" ? "opacity-30" : ""}`}
           src="norway.png"
           alt=""
           width={200}

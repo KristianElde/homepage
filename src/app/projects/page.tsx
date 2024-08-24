@@ -1,18 +1,22 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import { useLang } from "../components/langContext";
 import { Project, ProjectProps } from "../components/project";
 
 export default function Projects() {
   const { language, changeLanguage } = useLang();
+  const { theme } = useTheme();
+  const websiteImg =
+    theme === "light" ? "homepage-dark.png" : "homepage-light.png";
 
   const projectsEN: ProjectProps[] = [
     {
       projectName: "echos website",
       imgPath: "echo-uib.png",
-      github: "",
+      github: "https://github.com/echo-webkom/echo-web-mono",
       description: "lorem",
-      link: "echo.uib.no",
+      link: "https://echo.uib.no",
     },
     {
       projectName: "Retail Repair data dashboard",
@@ -20,7 +24,14 @@ export default function Projects() {
       github: "",
       description:
         "I completed an assignment for a company that repairs lawnmowers. I developed a data dashboard with various graphs and charts that make it easier for them to analyze their routines and streamline operations!",
-      link: "retail-repair-delicate-hill-6442.fly.dev",
+      link: "https://retail-repair-delicate-hill-6442.fly.dev",
+    },
+    {
+      projectName: "Personal website",
+      imgPath: websiteImg,
+      github: "https://github.com/KristianElde/homepage",
+      description: "lorem",
+      link: "/",
     },
   ];
 
@@ -28,7 +39,7 @@ export default function Projects() {
     {
       projectName: "echos nettside",
       imgPath: "echo-uib.png",
-      github: "",
+      github: "https://github.com/echo-webkom/echo-web-mono",
       description: "lorem",
       link: "echo.uib.no",
     },
@@ -39,6 +50,13 @@ export default function Projects() {
       description:
         "Gjorde et oppdrag for en bedrift som driver med reperasjon av gressklippere. Utviklet et data dashboard med ulike grafer og diagrammer som gjør det enklere for dem å analysere egne rutiner og effektivisere driften!",
       link: "retail-repair-delicate-hill-6442.fly.dev",
+    },
+    {
+      projectName: "Personlig nettside",
+      imgPath: websiteImg,
+      github: "https://github.com/KristianElde/homepage",
+      description: "lorem",
+      link: "/",
     },
   ];
 

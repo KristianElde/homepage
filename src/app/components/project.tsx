@@ -2,6 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 import { FaGithub } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeader from "./sectionHeader";
 
 export type ProjectProps = {
@@ -31,18 +32,26 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
           </p>
         </li>
         <li>
-          <div
-            className={`flex flex-row space-x-4 ${
-              i % 2 != 0 ? "justify-end" : null
-            }`}
-          >
-            <a href={props.github}>
+          <a href={props.github} target="_blank" rel="noreferrer noopener">
+            <div
+              className={`flex ${i % 2 != 0 ? "flex-row-reverse" : "flex-row"}`}
+            >
               <div className="pt-1.5">
                 <FaGithub />
               </div>
-            </a>
-            <h4>Check out on github!</h4>
-          </div>
+              <h4 className="mx-4">Check out on github!</h4>
+            </div>
+          </a>
+          <a href={props.link} target="_blank" rel="noreferrer noopener">
+            <div
+              className={`flex ${i % 2 != 0 ? "flex-row-reverse" : "flex-row"}`}
+            >
+              <div className="pt-1.5">
+                <FaExternalLinkAlt />
+              </div>
+              <h4 className="mx-4">Check out the project!</h4>
+            </div>
+          </a>
         </li>
       </ul>
       <div
@@ -50,7 +59,7 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
           i % 2 === 0 ? "order-4" : "order-1"
         }`}
       >
-        <img className="rounded-xl" src={props.imgPath} alt="" />
+        <img className="rounded-xl " src={props.imgPath} alt="" />
       </div>
     </div>
   );
