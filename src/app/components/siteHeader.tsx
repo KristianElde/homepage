@@ -7,8 +7,7 @@ import { usePathname } from "next/navigation";
 export default function SiteHeaderAlt() {
   const selected = usePathname();
   const { language, changeLanguage } = useLang();
-  const routes = [".", "CV", "Projects"];
-
+  const routes = ["", "CV", "Projects"];
   return (
     <>
       <div className="flex justify-between items-center pt-3">
@@ -38,7 +37,7 @@ export default function SiteHeaderAlt() {
               >
                 <a href={`/${header.toLowerCase()}`}>
                   <div className="text-white font-semibold hover:font-extrabold">
-                    {header === "." ? "Home" : header}
+                    {header === "" ? "Home" : header}
                   </div>
                 </a>
               </li>
