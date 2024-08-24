@@ -31,7 +31,7 @@ export default function SiteHeaderAlt() {
               <li
                 key={i}
                 className={`py-3 text-xl rounded-xl ${
-                  selected === `/${header.toLowerCase()}`
+                  selected === `/${header.toLowerCase}`
                     ? "bg-primary-shade"
                     : "bg-primary"
                 }`}
