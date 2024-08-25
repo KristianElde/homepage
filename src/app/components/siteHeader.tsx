@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function SiteHeaderAlt() {
   const selected = usePathname();
   const { language, changeLanguage } = useLang();
-  const routes = ["", "CV", "Projects"];
+  const routes = ["", "CV", "Projects", "Pictures"];
   return (
     <>
       <div className="flex justify-between items-center pt-3">
@@ -21,9 +21,9 @@ export default function SiteHeaderAlt() {
           <LangSwitcher />
         </div>
       </div>
-      <div className=" ">
+      <div>
         <ul
-          className={`grid grid-cols-3 text-center rounded-xl bg-primary shadow-2xl border`}
+          className={`grid grid-cols-4 text-center rounded-xl bg-primary shadow-2xl border`}
         >
           {routes.map((header, i) => {
             return (

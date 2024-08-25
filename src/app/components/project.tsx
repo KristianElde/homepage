@@ -4,12 +4,14 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeader from "./sectionHeader";
+import { GiStack } from "react-icons/gi";
 
 export type ProjectProps = {
   projectName: string;
   imgPath: string;
   github: string;
   description: string;
+  stack: string;
   link: string;
 };
 
@@ -31,6 +33,16 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
               : props.description}
           </p>
         </li>
+        <li className="pb-4">
+          <div
+            className={`flex ${i % 2 != 0 ? "flex-row-reverse" : "flex-row"}`}
+          >
+            <div className="pt-1.5">
+              <GiStack />
+            </div>
+            <h4 className="mx-4">{props.stack}</h4>
+          </div>
+        </li>
         <li>
           <a href={props.github} target="_blank" rel="noreferrer noopener">
             <div
@@ -42,16 +54,20 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
               <h4 className="mx-4">Check out on github!</h4>
             </div>
           </a>
-          <a href={props.link} target="_blank" rel="noreferrer noopener">
-            <div
-              className={`flex ${i % 2 != 0 ? "flex-row-reverse" : "flex-row"}`}
-            >
-              <div className="pt-1.5">
-                <FaExternalLinkAlt />
+          {props.link != "none" ? (
+            <a href={props.link} target="_blank" rel="noreferrer noopener">
+              <div
+                className={`flex ${
+                  i % 2 != 0 ? "flex-row-reverse" : "flex-row"
+                }`}
+              >
+                <div className="pt-1.5">
+                  <FaExternalLinkAlt />
+                </div>
+                <h4 className="mx-4">Check out the project!</h4>
               </div>
-              <h4 className="mx-4">Check out the project!</h4>
-            </div>
-          </a>
+            </a>
+          ) : null}
         </li>
       </ul>
       <div
