@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 export default function SiteHeaderAlt() {
   const selected = usePathname();
-  const { language, changeLanguage } = useLang();
+  const [language, changeLanguage] = useLang();
   const routes = ["", "CV", "Projects"];
   return (
     <>

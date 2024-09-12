@@ -8,7 +8,7 @@ import SectionHeader from "../components/sectionHeader";
 import { useLang } from "../components/langContext";
 
 export default function CV() {
-  const { language, changeLanguage } = useLang();
+  const [language, changeLanguage] = useLang();
 
   const educationsEN: EducationProps[] = [
     {

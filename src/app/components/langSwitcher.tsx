@@ -4,7 +4,7 @@ import { LuAlarmCheck, LuAlbum, LuMoon, LuSun } from "react-icons/lu";
 import { useLang } from "./langContext";
 
 const LangSwitcher = () => {
-  const { language, changeLanguage } = useLang();
+  const [language, changeLanguage] = useLang();
 
   return (
     <div className="space-x-2">

@@ -4,7 +4,7 @@ import { useLang } from "./components/langContext";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
-  const { language, changeLanguage } = useLang();
+  const [language, changeLanguage] = useLang();
   const about =
     language === "en"
       ? "Hi! My name is Kristian. I am a 23 year old guy from Drøbak in Norway. I am currently studying computer science at the University of Bergen."
