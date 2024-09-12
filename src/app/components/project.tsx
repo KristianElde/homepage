@@ -17,10 +17,10 @@ export type ProjectProps = {
 
 export function Project({ props, i }: { props: ProjectProps; i: number }) {
   return (
-    <div className="grid grid-cols-5 gap-5 border rounded-xl  shadow-lg p-4">
+    <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 border rounded-xl shadow-lg p-4">
       <ul
-        className={`col-span-3 ${
-          i % 2 === 0 ? "order-1" : "order-3 text-right"
+        className={`col-span-1 lg:col-span-3 ${
+          i % 2 === 0 ? "order-1" : "order-1 lg:order-3 lg:text-right"
         }`}
       >
         <li>
@@ -35,7 +35,9 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
         </li>
         <li className="pb-4">
           <div
-            className={`flex ${i % 2 != 0 ? "flex-row-reverse" : "flex-row"}`}
+            className={`flex ${
+              i % 2 != 0 ? "lg:flex-row-reverse" : "flex-row"
+            }`}
           >
             <div className="pt-1.5">
               <GiStack />
@@ -46,7 +48,9 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
         <li>
           <a href={props.github} target="_blank" rel="noreferrer noopener">
             <div
-              className={`flex ${i % 2 != 0 ? "flex-row-reverse" : "flex-row"}`}
+              className={`flex ${
+                i % 2 != 0 ? "lg:flex-row-reverse" : "flex-row"
+              }`}
             >
               <div className="pt-1.5">
                 <FaGithub />
@@ -58,7 +62,7 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
             <a href={props.link} target="_blank" rel="noreferrer noopener">
               <div
                 className={`flex ${
-                  i % 2 != 0 ? "flex-row-reverse" : "flex-row"
+                  i % 2 != 0 ? "lg:flex-row-reverse" : "flex-row"
                 }`}
               >
                 <div className="pt-1.5">
@@ -71,8 +75,8 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
         </li>
       </ul>
       <div
-        className={`w-full h-full pl-3 col-span-2 ${
-          i % 2 === 0 ? "order-4" : "order-1"
+        className={`w-full h-full pl-3 col-span-1 lg:col-span-2 ${
+          i % 2 === 0 ? "order-4" : "order-4 lg:order-1"
         }`}
       >
         <img className="rounded-xl " src={props.imgPath} alt="" />
