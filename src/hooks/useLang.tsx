@@ -1,9 +1,10 @@
 "use client";
-
-import { useLocalStorage } from "@uidotdev/usehooks";
+import { useLocalStorageState } from "ahooks";
 
 export const useLang = () => {
-  const [langStorage, setLangStorage] = useLocalStorage("lang", "en");
+  const [langStorage, setLangStorage] = useLocalStorageState("lang", {
+    defaultValue: "no",
+  });
   const setLang = (lang: "en" | "no") => {
     setLangStorage(lang);
   };

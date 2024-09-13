@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useLang } from "../../hooks/langContext";
+import { useLang } from "../../hooks/useLang";
 import { Project, ProjectProps } from "../../components/project";
 
 export default function Projects() {

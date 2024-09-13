@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { LuAlarmCheck, LuAlbum, LuMoon, LuSun } from "react-icons/lu";
-import { useLang } from "../hooks/langContext";
+import { useLang } from "../hooks/useLang";
 
 const LangSwitcher = () => {
   const [language, changeLanguage] = useLang();

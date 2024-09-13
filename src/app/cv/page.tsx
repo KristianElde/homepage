@@ -5,7 +5,7 @@ import Education, { type EducationProps } from "../../components/education";
 import { Job, JobProps } from "../../components/job";
 import Role, { RoleProps } from "../../components/role";
 import SectionHeader from "../../components/sectionHeader";
-import { useLang } from "../../hooks/langContext";
+import { useLang } from "../../hooks/useLang";
 
 export default function CV() {
   const [language, changeLanguage] = useLang();

@@ -1,12 +1,10 @@
 "use client";
-import { useLang } from "../hooks/langContext";
 import LangSwitcher from "./langSwitcher";
 import ThemeSwitcher from "./themeSwitcher";
 import { usePathname } from "next/navigation";
 
-export default function SiteHeaderAlt() {
+export default function SiteHeader() {
   const selected = usePathname();
-  const [language, changeLanguage] = useLang();
   const routes = ["", "CV", "Projects"];
   return (
     <>
