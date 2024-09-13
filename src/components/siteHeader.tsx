@@ -1,5 +1,5 @@
 "use client";
-import { useLang } from "./langContext";
+import { useLang } from "../hooks/langContext";
 import LangSwitcher from "./langSwitcher";
 import ThemeSwitcher from "./themeSwitcher";
 import { usePathname } from "next/navigation";

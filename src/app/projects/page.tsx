@@ -1,8 +1,8 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useLang } from "../components/langContext";
-import { Project, ProjectProps } from "../components/project";
+import { useLang } from "../../hooks/langContext";
+import { Project, ProjectProps } from "../../components/project";
 
 export default function Projects() {
   const [language, changeLanguage] = useLang();

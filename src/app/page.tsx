@@ -1,6 +1,6 @@
 "use client";
 
-import { useLang } from "./components/langContext";
+import { useLang } from "../hooks/langContext";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {

@@ -1,4 +1,4 @@
-import Picture from "../components/picture";
+import Picture from "../../components/picture";
 
 export default function Page() {
   const images: string[] = [

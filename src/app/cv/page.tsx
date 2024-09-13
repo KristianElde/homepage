@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Education, { type EducationProps } from "../components/education";
-import { Job, JobProps } from "../components/job";
-import Role, { RoleProps } from "../components/role";
-import SectionHeader from "../components/sectionHeader";
-import { useLang } from "../components/langContext";
+import Education, { type EducationProps } from "../../components/education";
+import { Job, JobProps } from "../../components/job";
+import Role, { RoleProps } from "../../components/role";
+import SectionHeader from "../../components/sectionHeader";
+import { useLang } from "../../hooks/langContext";
 
 export default function CV() {
   const [language, changeLanguage] = useLang();
