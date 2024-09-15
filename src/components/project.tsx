@@ -5,17 +5,21 @@ import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import SectionHeader from "./sectionHeader";
 import { GiStack } from "react-icons/gi";
+import { useLang } from "@/hooks/useLang";
 
 export type ProjectProps = {
-  projectName: string;
+  projectNameEN: string;
+  projectNameNO: string;
   imgPath: string;
   github: string;
-  description: string;
+  descriptionEN: string;
+  descriptionNO: string;
   stack: string;
   link: string;
 };
 
 export function Project({ props, i }: { props: ProjectProps; i: number }) {
+  const [language, changeLanguage] = useLang();
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 border rounded-xl shadow-lg p-4">
       <ul
@@ -24,14 +28,24 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
         }`}
       >
         <li>
-          <SectionHeader name={props.projectName}></SectionHeader>
+          <SectionHeader
+            name={language === "en" ? props.projectNameEN : props.projectNameNO}
+          ></SectionHeader>
         </li>
-        <li>
-          <p className="py-5">
-            {props.description === "lorem"
-              ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-              : props.description}
-          </p>
+        <li className="py-5">
+          <p>{language === "en" ? props.descriptionEN : props.descriptionNO}</p>
+          {props.projectNameEN === "Retail Repair data dashboard" ? (
+            <div className="pt-3 pb-5">
+              <p>{language === "en" ? "Log in with," : "Logg inn med,"}</p>
+              <p>Username: mockdata</p>
+              <p>Password: Mockdata123</p>
+              <p>
+                {language === "en"
+                  ? "for proof of concept-app"
+                  : "for konseptside"}
+              </p>
+            </div>
+          ) : null}
         </li>
         <li className="pb-4">
           <div
@@ -75,11 +89,11 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
         </li>
       </ul>
       <div
-        className={`w-full h-full pl-3 col-span-1 lg:col-span-2 ${
+        className={`w-full h-full pl-3 col-span-1 lg:col-span-2 flex flex-row justify-center items-center ${
           i % 2 === 0 ? "order-4" : "order-4 lg:order-1"
         }`}
       >
-        <img className="rounded-xl " src={props.imgPath} alt="" />
+        <img className="rounded-xl" src={props.imgPath} alt="" />
       </div>
     </div>
   );
