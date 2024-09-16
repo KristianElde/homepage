@@ -2,7 +2,6 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
 import Education, { type EducationProps } from "../../components/education";
 import { Job, JobProps } from "../../components/job";
 import Role, { RoleProps } from "../../components/role";
