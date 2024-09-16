@@ -40,9 +40,15 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
               <p>Username: mockdata</p>
               <p>Password: Mockdata123</p>
               <p>
-                {language === "en"
-                  ? "for proof of concept-app"
-                  : "for konseptside"}
+                {"for "}
+                <a
+                  href={props.link}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="underline font-bold"
+                >
+                  {language === "en" ? "proof of concept-app" : "konseptside"}
+                </a>
               </p>
             </div>
           ) : null}
@@ -60,18 +66,20 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
           </div>
         </li>
         <li>
-          <a href={props.github} target="_blank" rel="noreferrer noopener">
-            <div
-              className={`flex ${
-                i % 2 != 0 ? "lg:flex-row-reverse" : "flex-row"
-              }`}
-            >
-              <div className="pt-1.5">
-                <FaGithub />
+          {props.github != "" ? (
+            <a href={props.github} target="_blank" rel="noreferrer noopener">
+              <div
+                className={`flex ${
+                  i % 2 != 0 ? "lg:flex-row-reverse" : "flex-row"
+                }`}
+              >
+                <div className="pt-1.5">
+                  <FaGithub />
+                </div>
+                <h4 className="mx-4">Check out on github!</h4>
               </div>
-              <h4 className="mx-4">Check out on github!</h4>
-            </div>
-          </a>
+            </a>
+          ) : null}
           {props.link != "none" ? (
             <a href={props.link} target="_blank" rel="noreferrer noopener">
               <div
@@ -89,11 +97,14 @@ export function Project({ props, i }: { props: ProjectProps; i: number }) {
         </li>
       </ul>
       <div
-        className={`w-full h-full pl-3 col-span-1 lg:col-span-2 flex flex-row justify-center items-center ${
+        className={`w-full h-full space-y-6 pl-3 col-span-1 lg:col-span-2 flex flex-col justify-center items-center ${
           i % 2 === 0 ? "order-4" : "order-4 lg:order-1"
         }`}
       >
         <img className="rounded-xl" src={props.imgPath} alt="" />
+        {props.projectNameEN === "Retail Repair data dashboard" ? (
+          <img className="rounded-xl" src="rr-pie.png" alt="" />
+        ) : null}
       </div>
     </div>
   );

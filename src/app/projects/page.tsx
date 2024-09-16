@@ -27,14 +27,14 @@ export default function Projects() {
     {
       projectNameEN: "Retail Repair data dashboard",
       projectNameNO: "Retail Repair data dashbord",
-      imgPath: "rr-pie.png",
-      github: "https://github.com/KristianElde/retail-repair",
+      imgPath: "rr-login.png",
+      github: "",
       descriptionEN:
-        "I completed a project for a company that specializes in robot lawnmower repair. I developed a data dashboard with various graphs and charts, making it easier for them to analyze their routines and streamline operations! This project gave me valuable experience in delivering a product to a client. I learned a lot from the collaboration process with the client to develop a product that met their requirements.",
+        "I completed a project for a company that specializes in robot lawnmower repair. I developed a data dashboard with various graphs and charts, making it easier for them to analyze their routines and streamline operations! This project gave me valuable experience in delivering a product to a client. I learned a lot from the collaboration process with the client to develop a product that met their requirements. The application retrieves data through an API from the company's workshop system for logging repairs. It then stores the data in its own database and fetches it from there to visually present various statistics using different plots and diagrams.",
       descriptionNO:
-        "Gjorde et oppdrag for en bedrift som driver med reparasjon av robotgressklippere. Utviklet et data dashboard med ulike grafer og diagrammer som gjør det enklere for dem å analysere egne rutiner og effektivisere driften! Dette prosjektet ga meg verdifull erfaring med å levere et produkt en kunde! Jeg lærte mye av samarbeidsprosessen med kunden, for å utvikle et produkt som tilfredsstilte deres krav.",
+        "Gjorde et oppdrag for en bedrift som driver med reparasjon av robotgressklippere. Utviklet et data dashboard med ulike grafer og diagrammer som gjør det enklere for dem å analysere egne rutiner og effektivisere driften! Dette prosjektet ga meg verdifull erfaring med å levere et produkt til en kunde! Jeg lærte mye av samarbeidsprosessen med kunden, gjennom å utvikle et produkt som tilfredsstilte deres krav. Applikasjonen henter data gjennom et API til bedriftens verksteds-system for logging av reparasjoner. Lagrer deretter data i en egen database, og fetcher derfra for å framstille ulike statistikker grafisk ved hjelp av ulike plot og diagrammer.",
       stack: "Python, Streamlit, Postgresql DB, Flyctl",
-      link: "https://retail-repair-delicate-hill-6442.fly.dev",
+      link: "https://retail-repair.fly.dev",
     },
     {
       projectNameEN: "Personal website",
