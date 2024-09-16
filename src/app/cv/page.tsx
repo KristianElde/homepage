@@ -150,6 +150,7 @@ export default function CV() {
     "Haskell",
     "C",
     "JavaScript",
+    "TypeScript",
     "HTML",
     "CSS",
     "React",
@@ -180,18 +181,18 @@ export default function CV() {
   const readMore = language === "en" ? readMoreEN : readMoreNO;
 
   return (
-    <div className="md:grid md:grid-cols-4">
-      <ul className="flex flex-row mx-4 space-x-6 space-y-6 pt-8 text-md grid-cols-2 md:col-span-1 md:flex-col md:space-x-0">
-        <li className="w-1/2 border rounded-xl shadow-md md:w-full">
+    <div className="lg:grid lg:grid-cols-4">
+      <ul className=" mx-4 pt-8 text-md sm:space-x-6 space-y-6 sm:flex sm:flex-row grid-cols-2 lg:col-span-1 lg:flex-col lg:space-x-0">
+        <li className="pt-6 lg:p-0 w-full sm:w-1/2 lg:w-full">
           <img
             src="profil_H24.JPG"
             alt=""
             width=""
             height=""
-            className="rounded-xl"
+            className="border rounded-xl shadow-md"
           ></img>
         </li>
-        <li className="w-1/2 border rounded-xl p-3 shadow-md md:w-full">
+        <li className="border rounded-xl p-3 shadow-md  w-full sm:w-1/2 lg:w-full ">
           <SectionHeader2
             name={language === "en" ? "Personalia" : "Personalia"}
           />
@@ -207,7 +208,7 @@ export default function CV() {
             })}
           </ul>
         </li>
-        <li className="hidden md:block border rounded-xl p-3 shadow-md">
+        <li className="hidden lg:block border rounded-xl p-3 shadow-md">
           <SectionHeader2
             name={language === "en" ? "Technologies" : "Teknologier"}
           />
@@ -227,7 +228,7 @@ export default function CV() {
           </ul>
         </li>
       </ul>
-      <ul className="mx-4 space-y-6 pt-8 text-md md:col-span-3">
+      <ul className="mx-4 space-y-6 pt-8 text-md lg:col-span-3">
         <li className="border rounded-xl p-3 shadow-md">
           <SectionHeader name={language === "en" ? "Education" : "Utdanning"} />
           <ul className="space-y-6 pt-1">
