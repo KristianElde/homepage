@@ -17,10 +17,10 @@ export default function CV() {
     {
       educationName: "Informatics: Computer technology",
       institution: "University of Bergen",
-      duration: "August 2023 - Present time",
+      duration: "August 2023 - June 2025",
       degree: "Bachelors degree",
       description:
-        "Bachelors degree in computer technology. Covering broadly within the field of computer science. The degree contains courses in Object oriented programming, Database management systems, Algorithms and data structures, Functional programming, Operative systems, Software security and many more related topics.",
+        "Bachelors degree in computer technology. Covering broadly within the field of computer science. The degree contains a lot of relevant informatics courses, such as Object-oriented programming, Database management systems, Algorithms and data structures, Operative systems, Software security and many more related topics. In addition, the degree covers a broad selection of mathematics courses, including Basic Calculus, Discrete math, Statistics and Linear algebra.",
     },
     {
       educationName: "Economics and leadership",
@@ -36,10 +36,10 @@ export default function CV() {
     {
       educationName: "Informatikk: Datateknologi",
       institution: "Universitetet i Bergen",
-      duration: "August 2023 - dags dato",
+      duration: "August 2023 - Juni 2025",
       degree: "Bachelorgrad",
       description:
-        "Bachelorgrad i datateknologi. Graden dekker bredt innenfor informatikk-faget. Den innholder emner som objekt orientert programmering, Databaser og modellering, Algoritmer og datastrukturer, Funksjonell programmering, Operativ systemer, Programvaresikkerhet i tillegg til mange andre relaterte emner.",
+        "Bachelorgrad i datateknologi. Graden dekker bredt innenfor informatikk-faget. Graden innholder mange relevante informatikk-emner, som Objekt-orientert programmering, Databaser og modellering, Algoritmer og datastrukturer, Operativ systemer, Programvaresikkerhet og mange andre relaterte emner. I tillegg dekker graden et bredt utvalg av matematikk-emner. Inkludert Grunnleggende Kalkulus, Diskret matematikk, Statistikk og Lineær algebra.",
     },
     {
       educationName: "Økonomi og ledelse",
@@ -90,18 +90,19 @@ export default function CV() {
       name: "Member of echo Webkom",
       duration: "August 2023 - Present time",
       description:
-        "Webkom is a part of the student organization, echo. Webkom is responsible for maintaining and developing the student organizations website. Being part of a small team of developers i have gained valuable experience with working on projects in a team. I have also gained experience in and learned lots about all aspects of full stack web development. In Webkom we mainly used a tech stack consisting of Next, React, TypeScript, Tailwind CSS and postgres DB.",
+        "Webkom is a part of the student organization, echo. Webkom is responsible for maintaining and developing the student organizations website. Being part of a small team of developers i have gained valuable experience with working on projects in a team. I have also gained experience in, and learned lots about all aspects of full stack web development. In Webkom we mainly use a tech stack consisting of Next, React, TypeScript, Tailwind CSS and postgreSQL DB.",
     },
     {
-      name: "Leader av echo Webkom",
+      name: "Leader of echo Webkom",
       duration: "August 2024 - Present time",
-      description: "",
+      description:
+        "After one year in Webkom, I became the leader of the group. In addition to developing and maintaining the echo website, the leadership role comes with several other responsibilities. I am responsible for organizing meetings, coordinating tasks, the recruitment process, creating onboarding plans for new members, and making technical decisions such as design choices and the development of the tech stack. Leading a team of developers has not only strengthened my leadership and collaboration skills but also made me a much better developer, as I have taken on a greater responsibility for the product we deliver.",
     },
     {
       name: "echo main board",
       duration: "January 2024 - Present time",
       description:
-        "Echos main board is responsible for the daily Echos hovedstyre har som oppgave å legge til rette for den daglige driften av linjeforeningen. Dette innebærer oppgaver som administrering av arrangementer, økonomiske beslutninger, promotering av echo og videreutvikling av organisasjonen.",
+        "Echo's main board is responsible for facilitating the daily operations of the student association. This includes tasks such as managing events, making financial decisions, promoting echo, and further developing the organization.",
     },
   ];
 
@@ -110,12 +111,13 @@ export default function CV() {
       name: "Medlem av echo Webkom",
       duration: "August 2023 - dags dato",
       description:
-        "Webkom er en undergruppe av echo, linjeforeningen for informatikk på UiB. Webkom er ansvarlig for å drifte og utvikle linjeforeningens nettside. Det å være en del av et lite team av utviklere har gitt meg verdifull erfaring med prosjektarbeid og det å jobbe i et team. Jeg har også lært mye om alle aspekter ved full stack web-utvikling. I Webkom bruker vi hovedsakelig en tech-stack bestående av Next, React, TypeScript, Tailwind CSS og postgres DB.",
+        "Webkom er en undergruppe av echo, linjeforeningen for informatikk på UiB. Webkom er ansvarlig for å drifte og utvikle linjeforeningens nettside. Det å være en del av et lite team med utviklere har gitt meg verdifull erfaring med prosjektarbeid og det å jobbe i et team. Jeg har også lært mye om alle aspekter ved full stack web-utvikling. I Webkom bruker vi hovedsakelig en tech-stack bestående av Next, React, TypeScript, Tailwind CSS og postgreSQL DB.",
     },
     {
       name: "Leder av echo Webkom",
       duration: "August 2024 - dags dato",
-      description: "",
+      description:
+        "Etter ett år i Webkom ble jeg leder for gruppen. Ledervervet innebærer i tillegg til det å utvikle og vedlikeholde nettsiden til echo, en rekke andre ekstra ansvarsområder. Jeg er blant annet ansvarlig for avvikling av møter, koordinering av arbeidsoppgaver, inntak av nye medlemmer, opplæringsplan for nye medlemmer og tekniske avgjørelser som designvalg og utvikling av tech-stacken. Det å være leder for et team med utviklere har både styrket leder- og samarbeidevnene mine, men også gjort meg til en mye bedre utvikler ettersom at jeg har fått et større ansvar for produktet vi leverer.",
     },
     {
       name: "echo hovedstyre",
@@ -134,14 +136,14 @@ export default function CV() {
     { q: "Name", a: "Kristian Elde Johansen" },
     { q: "Age", a: "23 years" },
     { q: "From", a: "Drøbak, Norway" },
-    { q: "Hobbies", a: "Bouldering, Coding, Handball" },
+    { q: "Hobbies", a: "Bouldering, Coding, Play handball, Watch football" },
   ];
 
   const personaliaNO: personaliaType[] = [
     { q: "Navn", a: "Kristian Elde Johansen" },
     { q: "Alder", a: "23 år" },
     { q: "Fra", a: "Drøbak, Norge" },
-    { q: "Hobbyer", a: "Buldring, Koding, Håndball" },
+    { q: "Hobbyer", a: "Buldring, Koding, Spille håndball, Se på fotball" },
   ];
 
   const techs: string[] = [
@@ -194,7 +196,7 @@ export default function CV() {
         </li>
         <li className="border rounded-xl p-3 shadow-md  w-full sm:w-1/2 lg:w-full ">
           <SectionHeader2
-            name={language === "en" ? "Personalia" : "Personalia"}
+            name={language === "en" ? "Personal details" : "Personalia"}
           />
           <ul className="pt-3 space-y-2">
             {personalia.map((line, i) => {
