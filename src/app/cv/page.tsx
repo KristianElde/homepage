@@ -10,7 +10,7 @@ import { useLang } from "../../hooks/useLang";
 import SectionHeader2 from "@/components/sectionHeader2";
 
 export default function CV() {
-  const [language, changeLanguage] = useLang();
+  const language = useLang()[0];
 
   const educationsEN: EducationProps[] = [
     {
@@ -126,19 +126,19 @@ export default function CV() {
     },
   ];
 
-  type personaliaType = {
+  type personaliaProps = {
     q: string;
     a: string;
   };
 
-  const personaliaEN: personaliaType[] = [
+  const personaliaEN: personaliaProps[] = [
     { q: "Name", a: "Kristian Elde Johansen" },
     { q: "Age", a: "23 years" },
     { q: "From", a: "Drøbak, Norway" },
     { q: "Hobbies", a: "Bouldering, Coding, Play handball, Watch football" },
   ];
 
-  const personaliaNO: personaliaType[] = [
+  const personaliaNO: personaliaProps[] = [
     { q: "Navn", a: "Kristian Elde Johansen" },
     { q: "Alder", a: "23 år" },
     { q: "Fra", a: "Drøbak, Norge" },

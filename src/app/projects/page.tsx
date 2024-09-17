@@ -41,8 +41,10 @@ export default function Projects() {
       projectNameNO: "Personlig nettside",
       imgPath: websiteImg,
       github: "https://github.com/KristianElde/homepage",
-      descriptionEN: "lorem",
-      descriptionNO: "Laget denne nettsiden får å ha et sted å sammenstille",
+      descriptionEN:
+        "This project is simply this website. I created it as a place to showcase my coding projects, my resume, and a bit about who I am. I’ve also improved significantly in web development by building my own website from scratch!",
+      descriptionNO:
+        "Dette prosjektet er rett og slett denne nettsiden. Jeg lagde den for å ha et sted å vise frem kode-prosjektene mine, CVen min og litt om hvem jeg er. Jeg har også blitt mye bedre på web-utvikling av å lage min egen nettside fra scratch!",
       stack: "React, TypeScript, HTML, TailwindCSS, Vercel",
       link: "/",
     },
