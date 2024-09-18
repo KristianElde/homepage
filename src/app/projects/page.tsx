@@ -5,7 +5,7 @@ import { useLang } from "../../hooks/useLang";
 import { Project, ProjectProps } from "../../components/project";
 
 export default function Projects() {
-  const [language, changeLanguage] = useLang();
+  const language = useLang()[0];
   const { theme } = useTheme();
   const websiteImg =
     theme === "light" ? "homepage-dark.png" : "homepage-light.png";

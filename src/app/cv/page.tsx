@@ -38,7 +38,7 @@ export default function CV() {
       duration: "August 2023 - Juni 2025",
       degree: "Bachelorgrad",
       description:
-        "Bachelorgrad i datateknologi. Graden dekker bredt innenfor informatikk-faget. Graden innholder mange relevante informatikk-emner, som Objekt-orientert programmering, Databaser og modellering, Algoritmer og datastrukturer, Operativ systemer, Programvaresikkerhet og mange andre relaterte emner. I tillegg dekker graden et bredt utvalg av matematikk-emner. Inkludert Grunnleggende Kalkulus, Diskret matematikk, Statistikk og Lineær algebra.",
+        "Bachelorgrad i datateknologi. Graden dekker bredt innenfor informatikkfaget. Graden innholder mange relevante informatikk-emner, som Objektorientert programmering, Databaser og modellering, Algoritmer og datastrukturer, Operativsystemer, Programvaresikkerhet og mange andre relaterte emner. I tillegg dekker graden et bredt utvalg av matematikk-emner. Inkludert Grunnleggende Kalkulus, Diskret matematikk, Statistikk og Lineær algebra.",
     },
     {
       educationName: "Økonomi og ledelse",
@@ -56,14 +56,14 @@ export default function CV() {
       company: "University of Bergen",
       duration: "January 2024 - Present time",
       description:
-        "Part-time job as an teaching assistant in the course, INF100: Introduction To Programming. Responsible for helping students with their assignments in group sessions, as well as grading and commenting on their work. Got to develop my educational and communicative skills, and got to further my understanding for the subject.",
+        "Part-time job as an teaching assistant in the course, INF100: Introduction To Programming. Responsible for helping students with their assignments in group sessions, as well as grading and commenting on their work. Got to develop my educational and communicative skills, and got to further my understanding of the subject.",
     },
     {
       position: "Warehouse worker",
       company: "Asko Sentrallager",
       duration: "August 2020 - August 2024",
       description:
-        "Various position percentages over the course of three years. Working full time for some stretches, while having it as an part time job during studies. Learned a lot about being reliable towards my employeer, and developed a good work ethic.",
+        "Various position percentages over the course of three years. Working full time for some stretches, while having it as a part time job during studies. Learned a lot about being reliable towards my employer, and developed a good work ethic.",
     },
   ];
 
@@ -73,7 +73,7 @@ export default function CV() {
       company: "Universitetet i Bergen",
       duration: "Januar 2024 - dags dato",
       description:
-        "Deltidsjobb som gruppeleder i emnet, Introduksjon til programmering. Ansvarlig for å hjelpe studenter med oppgaver i gruppetimer, i tillegg til å rette og gi tilbakemeldinger på arbeidet deres. Utviklet mine pedagogiske og kommunikative egenskaper, og forbedret forståelsen min for faget.",
+        "Deltidsjobb som gruppeleder i emnet Introduksjon til programmering. Ansvarlig for å hjelpe studenter med oppgaver i gruppetimer, i tillegg til å rette og gi tilbakemeldinger på arbeidet deres. Utviklet mine pedagogiske og kommunikative egenskaper, og forbedret min forståelsen for faget.",
     },
     {
       position: "Lagermedarbeider",
@@ -116,7 +116,7 @@ export default function CV() {
       name: "Leder av echo Webkom",
       duration: "August 2024 - dags dato",
       description:
-        "Etter ett år i Webkom ble jeg leder for gruppen. Ledervervet innebærer i tillegg til det å utvikle og vedlikeholde nettsiden til echo, en rekke andre ekstra ansvarsområder. Jeg er blant annet ansvarlig for avvikling av møter, koordinering av arbeidsoppgaver, inntak av nye medlemmer, opplæringsplan for nye medlemmer og tekniske avgjørelser som designvalg og utvikling av tech-stacken. Det å være leder for et team med utviklere har både styrket leder- og samarbeidevnene mine, men også gjort meg til en mye bedre utvikler ettersom at jeg har fått et større ansvar for produktet vi leverer.",
+        "Etter ett år i Webkom ble jeg leder for gruppen. Ledervervet innebærer i tillegg til det å utvikle og vedlikeholde nettsiden til echo, en rekke andre ekstra ansvarsområder. Jeg er blant annet ansvarlig for å lede møter, koordinere arbeidsoppgaver, inntak av nye medlemmer, opplæringsplan for nye medlemmer og tekniske avgjørelser som designvalg og utvikling av tech-stacken. Det å være leder for et team med utviklere har både styrket leder- og samarbeidevnene mine, men også gjort meg til en mye bedre utvikler ettersom at jeg har fått et større ansvar for produktet vi leverer.",
     },
     {
       name: "echo hovedstyre",
@@ -201,9 +201,8 @@ export default function CV() {
             {personalia.map((line, i) => {
               return (
                 <li key={i}>
-                  <p>
-                    {line.q}: <strong>{line.a}</strong>
-                  </p>
+                  <p>{line.q}</p>
+                  <strong>{line.a}</strong>
                 </li>
               );
             })}
