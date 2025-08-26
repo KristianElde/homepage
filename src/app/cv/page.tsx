@@ -178,19 +178,9 @@ export default function CV() {
   const techs: string[] = [
     "Python",
     "Java",
-    "Haskell",
-    "C",
-    "JavaScript",
-    "TypeScript",
-    "HTML",
-    "CSS",
-    "React",
-    "Next JS",
-    "Vercel",
-    "Flyctl",
+    "JavaScript/TypeScript",
+    "web development",
     "SQL",
-    "PostgreSQL",
-    "Supabase",
   ];
 
   const readMoreEN = {
