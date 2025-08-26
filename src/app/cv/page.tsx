@@ -14,6 +14,14 @@ export default function CV() {
 
   const educationsEN: EducationProps[] = [
     {
+      educationName: "Artificial Intelligence",
+      institution: "University of Amsterdam",
+      duration: "September 2025 - June 2027",
+      degree: "Masters degree",
+      description:
+        "Masters degree in Artificial Intelligence. A specialized programme focusing on advanced methods in AI, with particular depth in Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Knowledge Representation, and Multi-Agent Systems. The degree emphasizes both theoretical foundations and practical applications, combining research methodology, scientific exploration, and hands-on projects. It culminates in a research-oriented thesis, allowing for in-depth study of cutting-edge AI challenges in academia or industry.",
+    },
+    {
       educationName: "Informatics: Computer technology",
       institution: "University of Bergen",
       duration: "August 2023 - June 2025",
@@ -32,6 +40,14 @@ export default function CV() {
   ];
 
   const educationsNO: EducationProps[] = [
+    {
+      educationName: "Artificial Intelligence",
+      institution: "University of Amsterdam",
+      duration: "September 2025 - Juni 2027",
+      degree: "Masters degree",
+      description:
+        "Mastergrad i Artificial Intelligence. Et spesialisert studieprogram med fordypning i avanserte metoder innen AI, særlig innen maskinlæring, dyp læring, Natural Language Processing, Computer Vision, Knowledge Representation og Multi-Agent Systems. Studiet kombinerer teoretiske fundamenter og praktiske anvendelser, med vekt på forskningsmetode, vitenskapelig utforskning og prosjekter. Graden avsluttes med en forskningsorientert masteroppgave, som gir mulighet til å fordype seg i AI-utfordringer i akademia eller industri.",
+    },
     {
       educationName: "Informatikk: Datateknologi",
       institution: "Universitetet i Bergen",
@@ -52,6 +68,13 @@ export default function CV() {
 
   const jobsEN: JobProps[] = [
     {
+      position: "Software developer",
+      company: "Mnemonic",
+      duration: "June 2025 - August 2025",
+      description:
+        "Summer internship at Mnemonic. Worked on a project involving graph visualization, gaining practical experience in software development, data representation, and teamwork in a collaborative environment.",
+    },
+    {
       position: "Teaching assistant",
       company: "University of Bergen",
       duration: "January 2024 - Present time",
@@ -68,6 +91,13 @@ export default function CV() {
   ];
 
   const jobsNO: JobProps[] = [
+    {
+      position: "Utvikler",
+      company: "Mnemonic",
+      duration: "Juni 2025 - August 2025",
+      description:
+        "Internship hos Mnemonic. Jobbet med et prosjekt innen graf-visualisering, og fikk praktisk erfaring med programvareutvikling, datarepresentasjon og teamarbeid i et samarbeidende miljø.",
+    },
     {
       position: "Gruppeleder",
       company: "Universitetet i Bergen",
