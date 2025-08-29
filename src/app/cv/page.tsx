@@ -180,6 +180,7 @@ export default function CV() {
     "Java",
     "JavaScript/TypeScript",
     "web development",
+    "Machine Learning",
     "SQL",
   ];
 
