@@ -7,8 +7,8 @@ export default function Home() {
   const language = useLang()[0];
   const about =
     language === "en"
-      ? "Hi! My name is Kristian. I am a 23 year old guy from Drøbak in Norway. I am currently studying computer science at the University of Bergen."
-      : "Hei! Mitt navn er Kristian. Jeg er 23 år gammel og kommer fra Drøbak. For tiden studerer jeg datateknologi ved Universitetet i Bergen. ";
+      ? "Hi! My name is Kristian. I am a 24 year old guy from Drøbak in Norway. I am currently doing my masters degree in Artificial Intelligence at the University of Amsterdam."
+      : "Hei! Mitt navn er Kristian. Jeg er 24 år gammel og kommer fra Drøbak. For tiden tar jeg mastergrad i Artificial Intelligence ved Universitetet i Amsterdam.";
   return (
     <div className="flex flex-col items-center space-y-8 pt-6">
       <div className="grid grid-cols-2">
