@@ -27,14 +27,14 @@ export default function SiteHeader() {
             return (
               <li
                 key={i}
-                className={`py-3 text-xl rounded-xl ${
+                className={`group py-3 text-xl rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg ${
                   selected === `/${header.toLowerCase()}`
                     ? "bg-primary-shade"
                     : "bg-primary"
                 }`}
               >
                 <a href={`/${header.toLowerCase()}`}>
-                  <div className="text-white font-semibold hover:font-extrabold">
+                  <div className="text-white font-semibold transition-all duration-300 group-hover:font-extrabold">
                     {header === "" ? "Home" : header}
                   </div>
                 </a>
