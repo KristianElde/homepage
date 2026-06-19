@@ -1,4 +1,4 @@
 allowBuilds:
-  '@vercel/speed-insights': false
-  sharp: false
-  unrs-resolver: false
+  '@vercel/speed-insights': true
+  sharp: true
+  unrs-resolver: true
