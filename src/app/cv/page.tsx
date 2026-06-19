@@ -35,7 +35,7 @@ export default function CV() {
       ],
     },
     {
-      educationName: "Economics and Leadership programme",
+      educationName: "Economics and Leadership",
       institution: "Oslo Metropolitan",
       duration: "Aug 2021 - June 2022",
       degree: "One-year programme",
@@ -59,8 +59,8 @@ export default function CV() {
       ],
     },
     {
-      educationName: "Informatics: Computer Technology",
-      institution: "University of Bergen",
+      educationName: "Informatikk: Datateknologi",
+      institution: "Universitetet i Bergen",
       duration: "Aug 2023 - Juni 2025",
       degree: "Bachelorgrad",
       description: [
@@ -70,7 +70,7 @@ export default function CV() {
       ],
     },
     {
-      educationName: "Economics and Leadership programme",
+      educationName: "Økonomi og Ledelse",
       institution: "Oslo Metropolitan",
       duration: "Aug 2021 - Juni 2022",
       degree: "Årsstudium",
