@@ -66,7 +66,7 @@ export default function CV() {
       description: [
         "GPA: 4.9/5",
         "Fullførte graden på 2 år i stedet for standard varighet på 3 år",
-        "Emner: Programmering, Algoritmer og Datastrukturer, Software Development, Database Management, Operativ Systemer, Maskinlæring, Matematikk, Statistikk",
+        "Emner: Programmering, Algoritmer og Datastrukturer, Software Development, Database Management, Operativsystemer, Maskinlæring, Matematikk, Statistikk",
       ],
     },
     {
