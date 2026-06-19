@@ -2,7 +2,7 @@ export type JobProps = {
   position: string;
   company: string;
   duration: string;
-  description: string;
+  description: string[];
 };
 
 export function Job(props: JobProps) {
@@ -17,7 +17,11 @@ export function Job(props: JobProps) {
         <h4>{props.duration}</h4>
       </li>
       <li className="mx-4 my-2">
-        <p>{props.description}</p>
+        <ul className="list-disc space-y-1 pl-5">
+          {props.description.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
       </li>
     </ul>
   );

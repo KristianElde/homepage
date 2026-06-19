@@ -3,7 +3,7 @@ export type EducationProps = {
   institution: string;
   duration: string;
   degree: string;
-  description: string;
+  description: string[];
 };
 
 export function Education(props: EducationProps) {
@@ -15,10 +15,17 @@ export function Education(props: EducationProps) {
         </h3>
       </li>
       <li>
+        <h4>{props.degree}</h4>
+      </li>
+      <li>
         <h4>{props.duration}</h4>
       </li>
       <li className="mx-4 my-2">
-        <p>{props.description}</p>
+        <ul className="list-disc space-y-1 pl-5">
+          {props.description.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
       </li>
     </ul>
   );
