@@ -16,143 +16,204 @@ export default function CV() {
     {
       educationName: "Artificial Intelligence",
       institution: "University of Amsterdam",
-      duration: "September 2025 - June 2027",
+      duration: "Sep 2025 - June 2027",
       degree: "Masters degree",
-      description:
-        "Masters degree in Artificial Intelligence. A specialized programme focusing on advanced methods in AI, with particular depth in Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Knowledge Representation, and Multi-Agent Systems. The degree emphasizes both theoretical foundations and practical applications, combining research methodology, scientific exploration, and hands-on projects. It culminates in a research-oriented thesis, allowing for in-depth study of cutting-edge AI challenges in academia or industry.",
+      description: [
+        "GPA: 8.5/10",
+        "Coursework: Machine Learning 1 + 2, Deep Learning 1 + 2, Computer Vision, Natural Language Processing, Information Retrieval, Reinforcement Learning, Fairness and Accountability in AI",
+      ],
     },
     {
-      educationName: "Informatics: Computer technology",
+      educationName: "Informatics: Computer Technology",
       institution: "University of Bergen",
-      duration: "August 2023 - June 2025",
+      duration: "Aug 2023 - June 2025",
       degree: "Bachelors degree",
-      description:
-        "Bachelors degree in computer technology. Covering broadly within the field of computer science. The degree contains a lot of relevant informatics courses, such as Object-oriented programming, Database management systems, Algorithms and data structures, Operative systems, Software security and many more related topics. In addition, the degree covers a broad selection of mathematics courses, including Basic Calculus, Discrete math, Statistics and Linear algebra.",
+      description: [
+        "GPA: 4.9/5",
+        "Completed the degree in 2 years instead of the standard 3-year duration",
+        "Coursework: Programming, Algorithms, Software Development, Database Management, Operating Systems, Machine Learning, Mathematics, Statistics",
+      ],
     },
     {
-      educationName: "Economics and leadership",
-      institution: "Oslo Metropolitan University",
-      duration: "August 2021 - June 2022",
-      degree: "One-year program",
-      description:
-        "One-year program in economics and leadership. Having courses covering basic business economics, macro economics, leadership theory, accounting and marketing.",
+      educationName: "Economics and Leadership programme",
+      institution: "Oslo Metropolitan",
+      duration: "Aug 2021 - June 2022",
+      degree: "One-year programme",
+      description: [
+        "Coursework: Business Economics, Macroeconomics, Leadership",
+        "GPA: 4/5",
+      ],
     },
   ];
+
 
   const educationsNO: EducationProps[] = [
     {
       educationName: "Artificial Intelligence",
       institution: "University of Amsterdam",
-      duration: "September 2025 - Juni 2027",
-      degree: "Masters degree",
-      description:
-        "Mastergrad i Artificial Intelligence. Et spesialisert studieprogram med fordypning i avanserte metoder innen AI, særlig innen maskinlæring, dyp læring, Natural Language Processing, Computer Vision, Knowledge Representation og Multi-Agent Systems. Studiet kombinerer teoretiske fundamenter og praktiske anvendelser, med vekt på forskningsmetode, vitenskapelig utforskning og prosjekter. Graden avsluttes med en forskningsorientert masteroppgave, som gir mulighet til å fordype seg i AI-utfordringer i akademia eller industri.",
+      duration: "Sep 2025 - Juni 2027",
+      degree: "Mastergrad",
+      description: [
+        "GPA: 8.5/10",
+        "Emner: Machine Learning 1 + 2, Deep Learning 1 + 2, Computer Vision, Natural Language Processing, Information Retrieval, Reinforcement Learning, Fairness and Accountability in AI",
+      ],
     },
     {
-      educationName: "Informatikk: Datateknologi",
-      institution: "Universitetet i Bergen",
-      duration: "August 2023 - Juni 2025",
+      educationName: "Informatics: Computer Technology",
+      institution: "University of Bergen",
+      duration: "Aug 2023 - Juni 2025",
       degree: "Bachelorgrad",
-      description:
-        "Bachelorgrad i datateknologi. Graden dekker bredt innenfor informatikkfaget. Graden innholder mange relevante informatikk-emner, som Objektorientert programmering, Databaser og modellering, Algoritmer og datastrukturer, Operativsystemer, Programvaresikkerhet og mange andre relaterte emner. I tillegg dekker graden et bredt utvalg av matematikk-emner. Inkludert Grunnleggende Kalkulus, Diskret matematikk, Statistikk og Lineær algebra.",
+      description: [
+        "GPA: 4.9/5",
+        "Fullforte graden pa 2 år i stedet for standard varighet på 3 år",
+        "Emner: Programmering, Algoritmer og Datastrukturer, Software Development, Database Management, Operativ Systemer, Maskinlæring, Matematikk, Statistikk",
+      ],
     },
     {
-      educationName: "Økonomi og ledelse",
-      institution: "OsloMet",
-      duration: "August 2021 - Juni 2022",
+      educationName: "Economics and Leadership programme",
+      institution: "Oslo Metropolitan",
+      duration: "Aug 2021 - Juni 2022",
       degree: "Årsstudium",
-      description:
-        "Årsstudium i økonomi og ledelse. Hadde emner som bedriftsøkonomi, samfunnsøkonomi, ledelsesteori, regnskapsføring og markedsføring.",
+      description: [
+        "Emner: Bedriftsøkonomi, Makroøkonomi, Ledelse",
+        "GPA: 4/5",
+      ],
     },
   ];
 
   const jobsEN: JobProps[] = [
     {
-      position: "Software developer",
+      position: "Internship as Data Scientist",
+      company: "Oda",
+      duration: "June 2026 - Aug 2026",
+      description: [
+        "Applying data analysis and model development to generate actionable business insights.",
+      ],
+    },
+    {
+      position: "Internship as Software Developer",
       company: "Mnemonic",
-      duration: "June 2025 - August 2025",
-      description:
-        "Summer internship at Mnemonic. Worked on a project involving graph visualization, gaining practical experience in software development, data representation, and teamwork in a collaborative environment.",
+      duration: "June 2025 - Aug 2025",
+      description: [
+        "Built a graph-based visualization tool for software-module communication.",
+        "Developed the project end-to-end in a small, independent team.",
+      ],
     },
     {
-      position: "Teaching assistant",
+      position: "Teaching Assistant",
+      company: "University of Amsterdam",
+      duration: "Sep 2026 - June 2027",
+      description: [
+        "Part of the MSc AI TA pool",
+        "TA in the course Computer Vision",
+        "Teaching seminars and grading coursework",
+      ],
+    },
+    {
+      position: "Teaching Assistant",
       company: "University of Bergen",
-      duration: "January 2024 - Present time",
-      description:
-        "Part-time job as an teaching assistant in the course, INF100: Introduction To Programming. Responsible for helping students with their assignments in group sessions, as well as grading and commenting on their work. Got to develop my educational and communicative skills, and got to further my understanding of the subject.",
+      duration: "Jan 2024 - Jun 2025",
+      description: [
+        "Taught Python programming.",
+        "Provided cross-course informatics homework support.",
+        "Graded coursework, assisted with teaching and held crash courses.",
+      ],
     },
     {
-      position: "Warehouse worker",
-      company: "Asko Sentrallager",
-      duration: "August 2020 - August 2024",
-      description:
-        "Various position percentages over the course of three years. Working full time for some stretches, while having it as a part time job during studies. Learned a lot about being reliable towards my employer, and developed a good work ethic.",
+      position: "Warehouse Worker",
+      company: "ASKO",
+      duration: "Aug 2020 - Aug 2024",
+      description: [
+        "Various position percentages. Part-time during studies.",
+      ],
     },
   ];
 
+
   const jobsNO: JobProps[] = [
     {
-      position: "Utvikler",
+      position: "Internship som Data Scientist",
+      company: "Oda",
+      duration: "Juni 2026 - Aug 2026",
+      description: [
+        "Bruker dataanalyse og modellutvikling for å skape innsikt.",
+      ],
+    },
+    {
+      position: "Internship som Software Developer",
       company: "Mnemonic",
-      duration: "Juni 2025 - August 2025",
-      description:
-        "Internship hos Mnemonic. Jobbet med et prosjekt innen graf-visualisering, og fikk praktisk erfaring med programvareutvikling, datarepresentasjon og teamarbeid i et samarbeidende miljø.",
+      duration: "Juni 2025 - Aug 2025",
+      description: [
+        "Bygget et grafbasert visualiseringsverktoy for kommunikasjon mellom software-moduler.",
+        "Utviklet prosjektet end-to-end i et lite, selvstendig team.",
+      ],
     },
     {
-      position: "Gruppeleder",
+      position: "Teaching Assistant",
+      company: "University of Amsterdam",
+      duration: "Sep 2026 - Juni 2027",
+      description: [
+        "Del av MSc AI TA pool",
+        "TA i kurset Computer Vision",
+        "Underviser seminarer og retter coursework",
+      ],
+    },
+    {
+      position: "Teaching Assistant",
       company: "Universitetet i Bergen",
-      duration: "Januar 2024 - dags dato",
-      description:
-        "Deltidsjobb som gruppeleder i emnet Introduksjon til programmering. Ansvarlig for å hjelpe studenter med oppgaver i gruppetimer, i tillegg til å rette og gi tilbakemeldinger på arbeidet deres. Utviklet mine pedagogiske og kommunikative egenskaper, og forbedret min forståelsen for faget.",
+      duration: "Jan 2024 - Jun 2025",
+      description: [
+        "Underviste i Python-programmering.",
+        "Arrangerte leksehjelp for alle informatikkemner.",
+        "Rettet innleveringer, assisterte med undervisning og holdt kræsjkurs.",
+      ],
     },
     {
-      position: "Lagermedarbeider",
-      company: "Asko Sentrallager",
-      duration: "August 2020 - August 2024",
-      description:
-        "Varierende stillingprosenter over en 3-årsperiode. Jobbet fulltid enkelte perioder, og hadde deltidsstilling under studier. Lærte mye om det å være pålitelig ovenfor en arbeidsgiver, og tilegnet meg en god arbeidsmoral.",
+      position: "Warehouse Worker",
+      company: "ASKO",
+      duration: "Aug 2020 - Aug 2024",
+      description: [
+        "Varierende stillingsprosenter. Deltid under studier.",
+      ],
     },
   ];
 
   const rolesEN: RoleProps[] = [
     {
-      name: "Member of echo Webkom",
-      duration: "August 2023 - Present time",
-      description:
-        "Webkom is a part of the student organization, echo. Webkom is responsible for maintaining and developing the student organizations website. Being part of a small team of developers i have gained valuable experience with working on projects in a team. I have also gained experience in, and learned lots about all aspects of full stack web development. In Webkom we mainly use a tech stack consisting of Next, React, TypeScript, Tailwind CSS and postgreSQL DB.",
-    },
-    {
-      name: "Leader of echo Webkom",
-      duration: "August 2024 - Present time",
-      description:
-        "After one year in Webkom, I became the leader of the group. In addition to developing and maintaining the echo website, the leadership role comes with several other responsibilities. I am responsible for organizing meetings, coordinating tasks, the recruitment process, creating onboarding plans for new members, and making technical decisions such as design choices and the development of the tech stack. Leading a team of developers has not only strengthened my leadership and collaboration skills but also made me a much better developer, as I have taken on a greater responsibility for the product we deliver.",
+      name: "echo Webkom",
+      duration: "Aug 2023 - June 2025",
+      description: [
+        "Maintained and developed the student organization's website",
+        "Served as leader the second year",
+      ],
     },
     {
       name: "echo main board",
-      duration: "January 2024 - Present time",
-      description:
-        "Echo's main board is responsible for facilitating the daily operations of the student association. This includes tasks such as managing events, making financial decisions, promoting echo, and further developing the organization.",
+      duration: "Jan 2024 - April 2025",
+      description: [
+        "Responsible for facilitating the daily operations of the student association",
+        "Managed events, made financial decisions, promoted echo and developed the organization",
+      ],
     },
   ];
 
+
   const rolesNO: RoleProps[] = [
     {
-      name: "Medlem av echo Webkom",
-      duration: "August 2023 - dags dato",
-      description:
-        "Webkom er en undergruppe av echo, linjeforeningen for informatikk på UiB. Webkom er ansvarlig for å drifte og utvikle linjeforeningens nettside. Det å være en del av et lite team med utviklere har gitt meg verdifull erfaring med prosjektarbeid og det å jobbe i et team. Jeg har også lært mye om alle aspekter ved full stack web-utvikling. I Webkom bruker vi hovedsakelig en tech-stack bestående av Next, React, TypeScript, Tailwind CSS og postgreSQL DB.",
-    },
-    {
-      name: "Leder av echo Webkom",
-      duration: "August 2024 - dags dato",
-      description:
-        "Etter ett år i Webkom ble jeg leder for gruppen. Ledervervet innebærer i tillegg til det å utvikle og vedlikeholde nettsiden til echo, en rekke andre ekstra ansvarsområder. Jeg er blant annet ansvarlig for å lede møter, koordinere arbeidsoppgaver, inntak av nye medlemmer, opplæringsplan for nye medlemmer og tekniske avgjørelser som designvalg og utvikling av tech-stacken. Det å være leder for et team med utviklere har både styrket leder- og samarbeidevnene mine, men også gjort meg til en mye bedre utvikler ettersom at jeg har fått et større ansvar for produktet vi leverer.",
+      name: "echo Webkom",
+      duration: "Aug 2023 - Juni 2025",
+      description: [
+        "Vedlikeholdt og utviklet nettsiden til studentorganisasjonen",
+        "Var leder det andre aret",
+      ],
     },
     {
       name: "echo hovedstyre",
-      duration: "Januar 2024 - dags dato",
-      description:
-        "Echos hovedstyre har som oppgave å legge til rette for den daglige driften av linjeforeningen. Dette innebærer oppgaver som administrering av arrangementer, økonomiske beslutninger, promotering av echo og videreutvikling av organisasjonen.",
+      duration: "Jan 2024 - April 2025",
+      description: [
+        "Ansvarlig for a tilrettelegge for den daglige driften av studentforeningen",
+        "Administrerte arrangementer, tok økonomiske beslutninger, promoterte echo og videreutviklet organisasjonen",
+      ],
     },
   ];
 
@@ -161,46 +222,65 @@ export default function CV() {
     a: string;
   };
 
+  type SkillGroup = {
+    category: string;
+    skills: string;
+  };
+
   const personaliaEN: personaliaProps[] = [
     { q: "Name", a: "Kristian Elde Johansen" },
-    { q: "Age", a: "23 years" },
+    { q: "Age", a: "25 years" },
     { q: "From", a: "Drøbak, Norway" },
-    { q: "Hobbies", a: "Bouldering, Coding, Play handball, Watch football" },
+    { q: "Hobbies", a: "Bouldering, Coding, Football" },
+    { q: "Email", a: "kristian.elde@proton.me" },
+    { q: "Phone", a: "+47 957 44 110" },
   ];
 
   const personaliaNO: personaliaProps[] = [
     { q: "Navn", a: "Kristian Elde Johansen" },
-    { q: "Alder", a: "23 år" },
+    { q: "Alder", a: "25 år" },
     { q: "Fra", a: "Drøbak, Norge" },
-    { q: "Hobbyer", a: "Buldring, Koding, Spille håndball, Se på fotball" },
+    { q: "Hobbyer", a: "Buldring, Koding, Fotball" },
+    { q: "Email", a: "kristian.elde@proton.me" },
+    { q: "Phone", a: "+47 957 44 110" },
   ];
 
-  const techs: string[] = [
-    "Python",
-    "Java",
-    "JavaScript/TypeScript",
-    "web development",
-    "Machine Learning",
-    "SQL",
+
+  const skillsEN: SkillGroup[] = [
+    {
+      category: "Hard",
+      skills: "Machine Learning, Software Development, Data Analysis, Git",
+    },
+    {
+      category: "Soft",
+      skills: "Teamwork, Driven, Structured, Analytical",
+    },
+    {
+      category: "Languages",
+      skills: "Python, JavaScript/TypeScript, Java, SQL, Go",
+    },
   ];
 
-  const readMoreEN = {
-    before: "Read more about my experience with the different technologies ",
-    link: "here",
-    after: ".",
-  };
-
-  const readMoreNO = {
-    before: "Les mer om min erfaring med de ulike teknologiene ",
-    link: "her",
-    after: ".",
-  };
+  const skillsNO: SkillGroup[] = [
+    {
+      category: "Hard",
+      skills: "Maskinlæring, Softwareutvikling, Dataanalyse, Git",
+    },
+    {
+      category: "Soft",
+      skills: "Samarbeid, Målrettet, Strukturert, Analytisk",
+    },
+    {
+      category: "Språk",
+      skills: "Python, JavaScript/TypeScript, Java, SQL, Go",
+    },
+  ];
 
   const educations = language === "en" ? educationsEN : educationsNO;
   const jobs = language === "en" ? jobsEN : jobsNO;
   const roles = language === "en" ? rolesEN : rolesNO;
   const personalia = language === "en" ? personaliaEN : personaliaNO;
-  const readMore = language === "en" ? readMoreEN : readMoreNO;
+  const skills = language === "en" ? skillsEN : skillsNO;
 
   return (
     <div className="lg:grid lg:grid-cols-4">
@@ -231,21 +311,16 @@ export default function CV() {
         </li>
         <li className="hidden lg:block border rounded-xl p-3 shadow-md">
           <SectionHeader2
-            name={language === "en" ? "Technologies" : "Teknologier"}
+            name="Skills"
           />
           <ul className="list-disc list-inside space-y-1 pt-3">
-            {techs.map((tech, i) => {
-              return <li key={i}>{tech}</li>;
+            {skills.map((skill) => {
+              return (
+                <li key={skill.category}>
+                  <strong>{skill.category}:</strong> {skill.skills}
+                </li>
+              );
             })}
-            <div className="pt-2">
-              <p>
-                {readMore.before}
-                <a href="/projects" className="font-bold underline">
-                  {readMore.link}
-                </a>
-                {readMore.after}
-              </p>
-            </div>
           </ul>
         </li>
       </ul>
@@ -262,7 +337,7 @@ export default function CV() {
         </li>
         <li className="border rounded-xl p-3 shadow-md">
           <SectionHeader
-            name={language === "en" ? "Job experience" : "Jobberfaring"}
+            name={language === "en" ? "Work Experience" : "Jobberfaring"}
           />
           <ul className="space-y-6 pt-1">
             {jobs.map((job, i) => (
@@ -274,7 +349,7 @@ export default function CV() {
         </li>
         <li className="border rounded-xl p-3 shadow-md">
           <SectionHeader
-            name={language === "en" ? "Volunteer roles" : "Frivillige verv"}
+            name={language === "en" ? "Extracurricular Work" : "Frivillige verv"}
           />
           <ul className="space-y-6 pt-1">
             {roles.map((role, i) => (
