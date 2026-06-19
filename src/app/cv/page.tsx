@@ -313,11 +313,12 @@ export default function CV() {
           <SectionHeader2
             name="Skills"
           />
-          <ul className="list-disc list-inside space-y-1 pt-3">
+          <ul className="pt-3 space-y-2">
             {skills.map((skill) => {
               return (
                 <li key={skill.category}>
-                  <strong>{skill.category}:</strong> {skill.skills}
+                  <p>{skill.category}</p>
+                  <strong>{skill.skills}</strong>
                 </li>
               );
             })}
