@@ -65,7 +65,7 @@ export default function CV() {
       degree: "Bachelorgrad",
       description: [
         "GPA: 4.9/5",
-        "Fullforte graden pa 2 år i stedet for standard varighet på 3 år",
+        "Fullførte graden på 2 år i stedet for standard varighet på 3 år",
         "Emner: Programmering, Algoritmer og Datastrukturer, Software Development, Database Management, Operativ Systemer, Maskinlæring, Matematikk, Statistikk",
       ],
     },
@@ -144,7 +144,7 @@ export default function CV() {
       company: "Mnemonic",
       duration: "Juni 2025 - Aug 2025",
       description: [
-        "Bygget et grafbasert visualiseringsverktoy for kommunikasjon mellom software-moduler.",
+        "Bygget et grafbasert visualiseringsverktøy for kommunikasjon mellom software-moduler.",
         "Utviklet prosjektet end-to-end i et lite, selvstendig team.",
       ],
     },
@@ -204,14 +204,14 @@ export default function CV() {
       duration: "Aug 2023 - Juni 2025",
       description: [
         "Vedlikeholdt og utviklet nettsiden til studentorganisasjonen",
-        "Var leder det andre aret",
+        "Var leder det andre året",
       ],
     },
     {
       name: "echo hovedstyre",
       duration: "Jan 2024 - April 2025",
       description: [
-        "Ansvarlig for a tilrettelegge for den daglige driften av studentforeningen",
+        "Ansvarlig for å tilrettelegge for den daglige driften av studentforeningen",
         "Administrerte arrangementer, tok økonomiske beslutninger, promoterte echo og videreutviklet organisasjonen",
       ],
     },
