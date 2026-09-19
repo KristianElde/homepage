@@ -1,18 +1,14 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useMounted } from "../../hooks/useMounted";
 import { useLang } from "../../hooks/useLang";
 import { Project, ProjectProps } from "../../components/project";
 
 export default function Projects() {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
   const language = useLang()[0];
   const { resolvedTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const websiteImg =
     mounted && resolvedTheme === "light"

@@ -1,16 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 import { LuMoon, LuSun } from "react-icons/lu";
 
-const ThemeSwitcher = () => {
-  const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+function useMounted() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
+}
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+const ThemeSwitcher = () => {
+  const mounted = useMounted();
+  const { resolvedTheme, setTheme } = useTheme();
 
   function toggleTheme() {
     setTheme(resolvedTheme === "light" ? "dark" : "light");
