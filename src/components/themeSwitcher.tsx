@@ -17,11 +17,18 @@ const ThemeSwitcher = () => {
   const { resolvedTheme, setTheme } = useTheme();
 
   function toggleTheme() {
+    if (!mounted) return;
+
     setTheme(resolvedTheme === "light" ? "dark" : "light");
   }
 
   return (
-    <button className="h-6 w-6 mt-2" onClick={toggleTheme} disabled={!mounted}>
+    <button
+      type="button"
+      className="h-6 w-6 mt-2"
+      onClick={toggleTheme}
+      aria-disabled={!mounted}
+    >
       {mounted && resolvedTheme === "light" ? (
         <LuMoon className=" h-full w-full" />
       ) : (
