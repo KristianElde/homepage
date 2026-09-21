@@ -28,7 +28,7 @@ export default function SiteFooter() {
             key={link.href}
             href={link.href}
             aria-label={link.label}
-            className="grid h-11 w-11 place-items-center rounded-full border border-border/30 bg-background text-foreground shadow-sm transition duration-300 hover:-translate-y-1 hover:border-primary hover:bg-primary hover:text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+            className="grid h-11 w-11 place-items-center rounded-full border border-border/30 bg-background text-foreground shadow-xs transition duration-300 hover:-translate-y-1 hover:border-primary hover:bg-primary hover:text-white hover:shadow-lg focus:outline-hidden focus:ring-2 focus:ring-primary/50"
           >
             {link.icon}
           </a>
