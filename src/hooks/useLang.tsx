@@ -1,13 +1,34 @@
 "use client";
+
+import { useSyncExternalStore } from "react";
 import { useLocalStorageState } from "ahooks";
 
+type Language = "en" | "no";
+
+// Stable functions declared outside the hook.
+const subscribe = () => () => {};
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
+
 export const useLang = () => {
-  const [langStorage, setLangStorage] = useLocalStorageState("lang", {
-    defaultValue: "no",
-    listenStorageChange: true,
-  });
-  const setLang = (lang: "en" | "no") => {
-    setLangStorage(lang);
+  const hydrated = useSyncExternalStore(
+    subscribe,
+    getClientSnapshot,
+    getServerSnapshot,
+  );
+
+  const [storedLanguage, setStoredLanguage] =
+    useLocalStorageState<Language>("lang", {
+      defaultValue: "no",
+      listenStorageChange: true,
+    });
+
+  const language: Language =
+    hydrated && storedLanguage === "en" ? "en" : "no";
+
+  const setLanguage = (nextLanguage: Language) => {
+    setStoredLanguage(nextLanguage);
   };
-  return [langStorage, setLang] as const;
+
+  return [language, setLanguage] as const;
 };
