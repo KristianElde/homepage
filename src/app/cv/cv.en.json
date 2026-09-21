@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "personalia": "Personal details",
+    "skills": "Skills",
+    "education": "Education",
+    "jobs": "Work Experience",
+    "roles": "Extracurricular Work"
+  },
+  "personalia": [
+    { "q": "Name", "a": "Kristian Elde Johansen" },
+    { "q": "Age", "a": "25 years" },
+    { "q": "From", "a": "Drøbak, Norway" },
+    { "q": "Hobbies", "a": "Bouldering, Coding, Football" },
+    { "q": "Email", "a": "kristian.elde@proton.me" },
+    { "q": "Phone", "a": "+47 957 44 110" }
+  ],
+  "skills": [
+    {
+      "category": "Hard",
+      "skills": "Machine Learning, Software Development, Data Analysis, Git"
+    },
+    {
+      "category": "Soft",
+      "skills": "Teamwork, Driven, Structured, Analytical"
+    },
+    {
+      "category": "Languages",
+      "skills": "Python, JavaScript/TypeScript, Java, SQL, Go"
+    }
+  ],
+  "educations": [
+    {
+      "educationName": "Artificial Intelligence",
+      "institution": "University of Amsterdam",
+      "duration": "Sep 2025 - June 2027",
+      "degree": "Masters degree",
+      "description": [
+        "GPA: 8.5/10",
+        "Coursework: Machine Learning 1 + 2, Deep Learning 1 + 2, Computer Vision, Natural Language Processing, Information Retrieval, Reinforcement Learning, Fairness and Accountability in AI"
+      ]
+    },
+    {
+      "educationName": "Informatics: Computer Technology",
+      "institution": "University of Bergen",
+      "duration": "Aug 2023 - June 2025",
+      "degree": "Bachelors degree",
+      "description": [
+        "GPA: 4.9/5",
+        "Completed the degree in 2 years instead of the standard 3-year duration",
+        "Coursework: Programming, Algorithms, Software Development, Database Management, Operating Systems, Machine Learning, Mathematics, Statistics"
+      ]
+    },
+    {
+      "educationName": "Economics and Leadership",
+      "institution": "Oslo Metropolitan",
+      "duration": "Aug 2021 - June 2022",
+      "degree": "One-year programme",
+      "description": [
+        "Coursework: Business Economics, Macroeconomics, Leadership",
+        "GPA: 4/5"
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "position": "Internship as Data Scientist",
+      "company": "Oda",
+      "duration": "June 2026 - Aug 2026",
+      "description": [
+        "Applying data analysis and model development to generate actionable business insights."
+      ]
+    },
+    {
+      "position": "Internship as Software Developer",
+      "company": "Mnemonic",
+      "duration": "June 2025 - Aug 2025",
+      "description": [
+        "Built a graph-based visualization tool for software-module communication.",
+        "Developed the project end-to-end in a small, independent team."
+      ]
+    },
+    {
+      "position": "Teaching Assistant",
+      "company": "University of Amsterdam",
+      "duration": "Sep 2026 - June 2027",
+      "description": [
+        "Part of the MSc AI TA pool",
+        "TA in the course Computer Vision",
+        "Teaching seminars and grading coursework"
+      ]
+    },
+    {
+      "position": "Teaching Assistant",
+      "company": "University of Bergen",
+      "duration": "Jan 2024 - Jun 2025",
+      "description": [
+        "Taught Python programming.",
+        "Provided cross-course informatics homework support.",
+        "Graded coursework, assisted with teaching and held crash courses."
+      ]
+    },
+    {
+      "position": "Warehouse Worker",
+      "company": "ASKO",
+      "duration": "Aug 2020 - Aug 2024",
+      "description": [
+        "Various position percentages. Part-time during studies."
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "echo Webkom",
+      "duration": "Aug 2023 - June 2025",
+      "description": [
+        "Maintained and developed the student organization's website",
+        "Served as leader the second year"
+      ]
+    },
+    {
+      "name": "echo main board",
+      "duration": "Jan 2024 - April 2025",
+      "description": [
+        "Responsible for facilitating the daily operations of the student association",
+        "Managed events, made financial decisions, promoted echo and developed the organization"
+      ]
+    }
+  ]
+}
