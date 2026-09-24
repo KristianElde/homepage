@@ -20,22 +20,6 @@
       "a": "+47 957 44 110"
     },
     {
-      "q": "Website",
-      "a": "kristianelde.me (https://kristianelde.me/)"
-    },
-    {
-      "q": "LinkedIn",
-      "a": "Kristian Elde Johansen (https://linkedin.com/in/kristian-elde-johansen)"
-    },
-    {
-      "q": "GitHub",
-      "a": "KristianElde (https://github.com/KristianElde)"
-    },
-    {
-      "q": "Photo",
-      "a": "profil_H24.jpg"
-    },
-    {
       "q": "Age",
       "a": "25 years"
     },
@@ -48,6 +32,24 @@
       "a": "Bouldering, Coding, Football"
     }
   ],
+  "contact": {
+    "name": "Kristian Elde Johansen",
+    "email": "kristian.elde@proton.me",
+    "phone": "+47 957 44 110",
+    "photo": "profil_H24.jpg",
+    "website": {
+      "label": "kristianelde.me",
+      "url": "https://kristianelde.me/"
+    },
+    "linkedin": {
+      "label": "Kristian Elde Johansen",
+      "url": "https://linkedin.com/in/kristian-elde-johansen"
+    },
+    "github": {
+      "label": "KristianElde",
+      "url": "https://github.com/KristianElde"
+    }
+  },
   "skills": [
     {
       "category": "Hard",
@@ -138,7 +140,9 @@
       "position": "Warehouse Worker",
       "company": "ASKO",
       "duration": "Aug 2020 - Aug 2024",
-      "description": ["Various position percentages. Part-time during studies."]
+      "description": [
+        "Various position percentages. Part-time during studies."
+      ]
     }
   ],
   "roles": [

@@ -32,6 +32,24 @@
       "a": "+47 957 44 110"
     }
   ],
+  "contact": {
+    "name": "Kristian Elde Johansen",
+    "email": "kristian.elde@proton.me",
+    "phone": "+47 957 44 110",
+    "photo": "profil_H24.jpg",
+    "website": {
+      "label": "kristianelde.me",
+      "url": "https://kristianelde.me/"
+    },
+    "linkedin": {
+      "label": "Kristian Elde Johansen",
+      "url": "https://linkedin.com/in/kristian-elde-johansen"
+    },
+    "github": {
+      "label": "KristianElde",
+      "url": "https://github.com/KristianElde"
+    }
+  },
   "skills": [
     {
       "category": "Hard",
@@ -121,7 +139,9 @@
       "position": "Warehouse Worker",
       "company": "ASKO",
       "duration": "Aug 2020 - Aug 2024",
-      "description": ["Various position percentages. Part-time during studies."]
+      "description": [
+        "Various position percentages. Part-time during studies."
+      ]
     }
   ],
   "roles": [

@@ -7,13 +7,49 @@
     "roles": "Frivillige verv"
   },
   "personalia": [
-    { "q": "Navn", "a": "Kristian Elde Johansen" },
-    { "q": "Alder", "a": "25 år" },
-    { "q": "Fra", "a": "Drøbak, Norge" },
-    { "q": "Hobbyer", "a": "Buldring, Koding, Fotball" },
-    { "q": "Email", "a": "kristian.elde@proton.me" },
-    { "q": "Phone", "a": "+47 957 44 110" }
+    {
+      "q": "Navn",
+      "a": "Kristian Elde Johansen"
+    },
+    {
+      "q": "Alder",
+      "a": "25 år"
+    },
+    {
+      "q": "Fra",
+      "a": "Drøbak, Norge"
+    },
+    {
+      "q": "Hobbyer",
+      "a": "Buldring, Koding, Fotball"
+    },
+    {
+      "q": "Email",
+      "a": "kristian.elde@proton.me"
+    },
+    {
+      "q": "Phone",
+      "a": "+47 957 44 110"
+    }
   ],
+  "contact": {
+    "name": "Kristian Elde Johansen",
+    "email": "kristian.elde@proton.me",
+    "phone": "+47 957 44 110",
+    "photo": "profil_H24.jpg",
+    "website": {
+      "label": "kristianelde.me",
+      "url": "https://kristianelde.me/"
+    },
+    "linkedin": {
+      "label": "Kristian Elde Johansen",
+      "url": "https://linkedin.com/in/kristian-elde-johansen"
+    },
+    "github": {
+      "label": "KristianElde",
+      "url": "https://github.com/KristianElde"
+    }
+  },
   "skills": [
     {
       "category": "Hard",

@@ -20,22 +20,6 @@
       "a": "+47 957 44 110"
     },
     {
-      "q": "Nettside",
-      "a": "kristianelde.me (https://kristianelde.me/)"
-    },
-    {
-      "q": "LinkedIn",
-      "a": "Kristian Elde Johansen (https://linkedin.com/in/kristian-elde-johansen)"
-    },
-    {
-      "q": "GitHub",
-      "a": "KristianElde (https://github.com/KristianElde)"
-    },
-    {
-      "q": "Bilde",
-      "a": "profil_H24.jpg"
-    },
-    {
       "q": "Alder",
       "a": "25 år"
     },
@@ -48,6 +32,24 @@
       "a": "Buldring, Koding, Fotball"
     }
   ],
+  "contact": {
+    "name": "Kristian Elde Johansen",
+    "email": "kristian.elde@proton.me",
+    "phone": "+47 957 44 110",
+    "photo": "profil_H24.jpg",
+    "website": {
+      "label": "kristianelde.me",
+      "url": "https://kristianelde.me/"
+    },
+    "linkedin": {
+      "label": "Kristian Elde Johansen",
+      "url": "https://linkedin.com/in/kristian-elde-johansen"
+    },
+    "github": {
+      "label": "KristianElde",
+      "url": "https://github.com/KristianElde"
+    }
+  },
   "skills": [
     {
       "category": "Programmeringsspråk",

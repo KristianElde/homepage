@@ -21,6 +21,16 @@ type SkillGroup = {
   skills: string;
 };
 
+type ContactInfo = {
+  name: string;
+  email: string;
+  phone: string;
+  photo: string;
+  website: { label: string; url: string };
+  linkedin: { label: string; url: string };
+  github: { label: string; url: string };
+};
+
 type CVContent = {
   sections: {
     personalia: string;
@@ -29,7 +39,9 @@ type CVContent = {
     jobs: string;
     roles: string;
   };
+  // Website panel: keep its values independent from the LaTeX contact header.
   personalia: PersonaliaProps[];
+  contact: ContactInfo;
   skills: SkillGroup[];
   educations: EducationProps[];
   jobs: JobProps[];
