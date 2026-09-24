@@ -1,128 +1,137 @@
 {
   "sections": {
     "personalia": "Personalia",
-    "skills": "Skills",
+    "skills": "Teknologi",
     "education": "Utdanning",
-    "jobs": "Jobberfaring",
+    "jobs": "Arbeidserfaring",
     "roles": "Frivillige verv"
   },
   "personalia": [
-    { "q": "Navn", "a": "Kristian Elde Johansen" },
-    { "q": "Alder", "a": "25 år" },
-    { "q": "Fra", "a": "Drøbak, Norge" },
-    { "q": "Hobbyer", "a": "Buldring, Koding, Fotball" },
-    { "q": "Email", "a": "kristian.elde@proton.me" },
-    { "q": "Phone", "a": "+47 957 44 110" }
+    {
+      "q": "Navn",
+      "a": "Kristian Elde Johansen"
+    },
+    {
+      "q": "Email",
+      "a": "kristian.elde@proton.me"
+    },
+    {
+      "q": "Phone",
+      "a": "+47 957 44 110"
+    },
+    {
+      "q": "Nettside",
+      "a": "kristianelde.me (https://kristianelde.me/)"
+    },
+    {
+      "q": "LinkedIn",
+      "a": "Kristian Elde Johansen (https://linkedin.com/in/kristian-elde-johansen)"
+    },
+    {
+      "q": "GitHub",
+      "a": "KristianElde (https://github.com/KristianElde)"
+    },
+    {
+      "q": "Bilde",
+      "a": "profil_H24.jpg"
+    },
+    {
+      "q": "Alder",
+      "a": "25 år"
+    },
+    {
+      "q": "Fra",
+      "a": "Drøbak, Norge"
+    },
+    {
+      "q": "Hobbyer",
+      "a": "Buldring, Koding, Fotball"
+    }
   ],
   "skills": [
     {
-      "category": "Hard",
-      "skills": "Maskinlæring, Softwareutvikling, Dataanalyse, Git"
+      "category": "Programmeringsspråk",
+      "skills": "Python, JS/TS, Java, C++, Rust"
     },
     {
-      "category": "Soft",
-      "skills": "Samarbeid, Målrettet, Strukturert, Analytisk"
-    },
-    {
-      "category": "Språk",
-      "skills": "Python, JavaScript/TypeScript, Java, SQL, Go"
+      "category": "Teknologier",
+      "skills": "Webutvikling, Maskinlæring"
     }
   ],
   "educations": [
     {
       "educationName": "Artificial Intelligence",
       "institution": "University of Amsterdam",
-      "duration": "Sep 2025 - Juni 2027",
-      "degree": "Mastergrad",
+      "duration": "Sep 2025 – June 2027",
+      "degree": "Master",
       "description": [
-        "GPA: 8.5/10",
-        "Emner: Machine Learning 1 + 2, Deep Learning 1 + 2, Computer Vision, Natural Language Processing, Information Retrieval, Reinforcement Learning, Fairness and Accountability in AI"
+        "Emner: Deep learning, Computer vision, Natural Language Processing, Reinforcement Learning, AI Ethics"
       ]
     },
     {
       "educationName": "Informatikk: Datateknologi",
       "institution": "Universitetet i Bergen",
-      "duration": "Aug 2023 - Juni 2025",
-      "degree": "Bachelorgrad",
+      "duration": "Aug 2023 – June 2025",
+      "degree": "Bachelor",
       "description": [
-        "GPA: 4.9/5",
-        "Fullførte graden på 2 år i stedet for standard varighet på 3 år",
-        "Emner: Programmering, Algoritmer og Datastrukturer, Software Development, Database Management, Operativsystemer, Maskinlæring, Matematikk, Statistikk"
+        "Snittkarakter: 4.9/5.0",
+        "Fullførte graden på 2 år i stedet for den vanlige 3-årige varigheten",
+        "Emner: Programmering, Algoritmer, Systemutvikling, Databaser, Operativsystem, Maskinlæring, Matematikk, Statistikk"
       ]
     },
     {
-      "educationName": "Økonomi og Ledelse",
-      "institution": "Oslo Metropolitan",
-      "duration": "Aug 2021 - Juni 2022",
+      "educationName": "Økonomi og ledelse",
+      "institution": "OsloMet",
+      "duration": "Aug 2021 – June 2022",
       "degree": "Årsstudium",
       "description": [
-        "Emner: Bedriftsøkonomi, Makroøkonomi, Ledelse",
-        "GPA: 4/5"
+        "Emner: Business Economics, Macro Economics, Leadership, Accounting, Marketing."
       ]
     }
   ],
   "jobs": [
     {
-      "position": "Internship som Data Scientist",
-      "company": "Oda",
-      "duration": "Juni 2026 - Aug 2026",
-      "description": [
-        "Bruker dataanalyse og modellutvikling for å skape innsikt."
-      ]
-    },
-    {
-      "position": "Internship som Software Developer",
+      "position": "Internship som utvikler",
       "company": "Mnemonic",
-      "duration": "Juni 2025 - Aug 2025",
+      "duration": "June 2025 - Aug 2025",
       "description": [
-        "Bygget et grafbasert visualiseringsverktøy for kommunikasjon mellom software-moduler.",
-        "Utviklet prosjektet end-to-end i et lite, selvstendig team."
+        "Jobbet en sommer hos et ledende informasjonssikkerhetsselskap",
+        "Arbeidet med grafvisualisering"
       ]
     },
     {
-      "position": "Teaching Assistant",
-      "company": "University of Amsterdam",
-      "duration": "Sep 2026 - Juni 2027",
-      "description": [
-        "Del av MSc AI TA pool",
-        "TA i kurset Computer Vision",
-        "Underviser seminarer og retter coursework"
-      ]
-    },
-    {
-      "position": "Teaching Assistant",
+      "position": "Undervisningsassistent",
       "company": "Universitetet i Bergen",
       "duration": "Jan 2024 - Jun 2025",
       "description": [
-        "Underviste i Python-programmering.",
-        "Arrangerte leksehjelp for alle informatikkemner.",
-        "Rettet innleveringer, assisterte med undervisning og holdt kræsjkurs."
+        "Underviste i programmering i Python",
+        "Retting av øvinger"
       ]
     },
     {
-      "position": "Warehouse Worker",
+      "position": "Lagerarbeider",
       "company": "ASKO",
       "duration": "Aug 2020 - Aug 2024",
       "description": [
-        "Varierende stillingsprosenter. Deltid under studier."
+        "Ulike stillingsprosenter. Deltid ved siden av studiene."
       ]
     }
   ],
   "roles": [
     {
       "name": "echo Webkom",
-      "duration": "Aug 2023 - Juni 2025",
+      "duration": "Aug 2023 - June 2025",
       "description": [
-        "Vedlikeholdt og utviklet nettsiden til studentorganisasjonen",
-        "Var leder det andre året"
+        "Ansvarlig for vedlikehold og videreutvikling av studentorganisasjonens nettside",
+        "Var leder for gruppen det andre året"
       ]
     },
     {
-      "name": "echo hovedstyre",
+      "name": "echo main board",
       "duration": "Jan 2024 - April 2025",
       "description": [
-        "Ansvarlig for å tilrettelegge for den daglige driften av studentforeningen",
-        "Administrerte arrangementer, tok økonomiske beslutninger, promoterte echo og videreutviklet organisasjonen"
+        "Ansvarlig for å tilrettelegge den daglige driften av studentorganisasjonen",
+        "Arbeidsoppgaver som arrangementsledelse, økonomiske beslutninger, markedsføring av echo og videreutvikling av organisasjonen"
       ]
     }
   ]

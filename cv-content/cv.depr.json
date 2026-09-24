@@ -12,30 +12,6 @@
       "a": "Kristian Elde Johansen"
     },
     {
-      "q": "Email",
-      "a": "kristian.elde@proton.me"
-    },
-    {
-      "q": "Phone",
-      "a": "+47 957 44 110"
-    },
-    {
-      "q": "Website",
-      "a": "kristianelde.me (https://kristianelde.me/)"
-    },
-    {
-      "q": "LinkedIn",
-      "a": "Kristian Elde Johansen (https://linkedin.com/in/kristian-elde-johansen)"
-    },
-    {
-      "q": "GitHub",
-      "a": "KristianElde (https://github.com/KristianElde)"
-    },
-    {
-      "q": "Photo",
-      "a": "profil_H24.jpg"
-    },
-    {
       "q": "Age",
       "a": "25 years"
     },
@@ -46,12 +22,20 @@
     {
       "q": "Hobbies",
       "a": "Bouldering, Coding, Football"
+    },
+    {
+      "q": "Email",
+      "a": "kristian.elde@proton.me"
+    },
+    {
+      "q": "Phone",
+      "a": "+47 957 44 110"
     }
   ],
   "skills": [
     {
       "category": "Hard",
-      "skills": "Machine Learning, Optimization, Software Development, Data Analysis, Git"
+      "skills": "Machine Learning, Software Development, Data Analysis, Git"
     },
     {
       "category": "Soft",
@@ -59,14 +43,14 @@
     },
     {
       "category": "Languages",
-      "skills": "Python, SQL, JavaScript/TypeScript, Java"
+      "skills": "Python, JavaScript/TypeScript, Java, SQL, Go"
     }
   ],
   "educations": [
     {
       "educationName": "Artificial Intelligence",
       "institution": "University of Amsterdam",
-      "duration": "Sep 2025 – June 2027",
+      "duration": "Sep 2025 - June 2027",
       "degree": "Masters degree",
       "description": [
         "GPA: 8.5/10",
@@ -76,7 +60,7 @@
     {
       "educationName": "Informatics: Computer Technology",
       "institution": "University of Bergen",
-      "duration": "Aug 2023 – June 2025",
+      "duration": "Aug 2023 - June 2025",
       "degree": "Bachelors degree",
       "description": [
         "GPA: 4.9/5",
@@ -87,7 +71,7 @@
     {
       "educationName": "Economics and Leadership",
       "institution": "Oslo Metropolitan",
-      "duration": "Aug 2021 – June 2022",
+      "duration": "Aug 2021 - June 2022",
       "degree": "One-year programme",
       "description": [
         "Coursework: Business Economics, Macroeconomics, Leadership",
@@ -101,9 +85,7 @@
       "company": "Oda",
       "duration": "June 2026 - Aug 2026",
       "description": [
-        "Scoped and delivered a project for campaign planning in a cross-functional team",
-        "Built an XGBoost model predicting product campaign uplift from historical campaign data",
-        "Shipped the model to production with continuous training and an API for real-time inference"
+        "Applying data analysis and model development to generate actionable business insights."
       ]
     },
     {
@@ -120,7 +102,8 @@
       "company": "University of Amsterdam",
       "duration": "Sep 2026 - June 2027",
       "description": [
-        "Part of the MSc AI TA pool, and TA for the course Computer Vision",
+        "Part of the MSc AI TA pool",
+        "TA in the course Computer Vision",
         "Teaching seminars and grading coursework"
       ]
     },
