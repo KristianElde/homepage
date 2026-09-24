@@ -8,8 +8,8 @@ import Role, { RoleProps } from "../../components/role";
 import SectionHeader from "../../components/sectionHeader";
 import { useLang } from "../../hooks/useLang";
 import SectionHeader2 from "@/components/sectionHeader2";
-import cvEN from "./cv.en.json";
-import cvNO from "./cv.no.json";
+import cvEN from "../../../cv-content/cv.en.json";
+import cvNO from "../../../cv-content/cv.no.json";
 
 type PersonaliaProps = {
   q: string;
